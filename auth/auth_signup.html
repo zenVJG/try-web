@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <style>
+    :root {
+      --bg: #f3f8ff;
+      --card: #ffffff;
+      --text: #14304a;
+      --muted: #597089;
+      --line: #d6e2f0;
+      --primary: #0b66c3;
+      --primary-hover: #0957a5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 20%, #d9ecff 0%, transparent 45%),
+        radial-gradient(circle at 88% 80%, #cde2ff 0%, transparent 40%),
+        var(--bg);
+    }
+
+    .signup-card {
+      width: 100%;
+      max-width: 460px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 16px 40px rgba(12, 56, 102, 0.12);
+      padding: 28px 22px;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .field {
+      margin-bottom: 12px;
+    }
+
+    .phone-row {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    input:focus {
+      border-color: #66a7f0;
+      box-shadow: 0 0 0 3px rgba(11, 102, 195, 0.14);
+    }
+
+    .terms {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      margin: 6px 0 14px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .terms input {
+      margin-top: 2px;
+    }
+
+    .terms a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .terms a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      color: #fff;
+      background: var(--primary);
+      transition: transform 0.05s, background 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--primary-hover);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    @media (max-width: 520px) {
+      .row {
+        grid-template-columns: 1fr;
+      }
+
+      .phone-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="signup-card">
+    <h1>Register</h1>
+
+    <form>
+      <div class="row">
+        <div class="field">
+          <label for="first-name">First name</label>
+          <input id="first-name" name="first_name" type="text" placeholder="Nguyen Van" required />
+        </div>
+
+        <div class="field">
+          <label for="last-name">Last name</label>
+          <input id="last-name" name="last_name" type="text" placeholder="A" required />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="Choose a username" required />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone number</label>
+        <div class="phone-row">
+          <select id="phone-region" name="phone_region" aria-label="Phone region" required>
+            <option value="+84" selected>+84 (VN)</option>
+            <option value="+1">+1 (US/CA)</option>
+            <option value="+44">+44 (UK)</option>
+            <option value="+61">+61 (AU)</option>
+            <option value="+81">+81 (JP)</option>
+            <option value="+82">+82 (KR)</option>
+            <option value="+65">+65 (SG)</option>
+            <option value="+66">+66 (TH)</option>
+            <option value="+91">+91 (IN)</option>
+          </select>
+          <input id="phone" name="phone" type="tel" placeholder="123456789" required />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Create a password" required />
+      </div>
+
+      <div class="field">
+        <label for="confirm-password">Confirm password</label>
+        <input id="confirm-password" name="confirm_password" type="password" placeholder="Confirm your password" required />
+      </div>
+
+      <label class="terms" for="terms">
+        <input id="terms" name="terms" type="checkbox" required />
+        <span>
+          I accept the <a href="#">Term of Use</a> &amp; <a href="#">Privacy Policy</a>
+        </span>
+      </label>
+
+      <button class="btn" type="submit">Sign up</button>
+    </form>
+  </main>
+</body>
+</html>

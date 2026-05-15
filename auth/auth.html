@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In</title>
+  <style>
+    :root {
+      --bg: #f3f8ff;
+      --card: #ffffff;
+      --text: #14304a;
+      --muted: #597089;
+      --line: #d6e2f0;
+      --primary: #0b66c3;
+      --primary-hover: #0957a5;
+      --google: #ffffff;
+      --facebook: #1877f2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container-wrapper {
+        display: flex;
+        width: 100%;
+        min-width: 100vh;
+        align-items: center;
+    }
+
+    .left-section {
+        flex: 1; /* Chiếm 50% hoặc phần còn lại */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../image/background.jpg'); /* Thay đường dẫn ảnh nền của bạn vào đây */
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+
+    .right-section {
+        flex: 1; /* Chiếm 50% hoặc phần còn lại */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      min-height: 100vh;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 10% 20%, #d9ecff 0%, transparent 45%),
+        radial-gradient(circle at 90% 80%, #cde2ff 0%, transparent 40%),
+        var(--bg);
+      padding: 24px;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 30px 24px;
+      box-shadow: 0 16px 40px rgba(12, 56, 102, 0.12);
+    }
+
+    .logo-wrap {
+      text-align: center;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .logo {
+      width: 600px;
+      height: auto;
+      margin-right: 50px;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    input:focus {
+      border-color: #66a7f0;
+      box-shadow: 0 0 0 3px rgba(11, 102, 195, 0.14);
+    }
+
+    .btn {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.05s, background 0.2s;
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn-login {
+      background: var(--primary);
+      color: #fff;
+      margin-top: 6px;
+    }
+
+    .btn-login:hover {
+      background: var(--primary-hover);
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 18px 0 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .btn-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .btn-google {
+      background: var(--google);
+      color: #1f2f46;
+      border: 1px solid var(--line);
+    }
+
+    .btn-facebook {
+      background: var(--facebook);
+      color: #fff;
+    }
+
+    .signup {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .signup a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .signup a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="left-section">
+            <img
+            class="logo"
+            src="../image/logo.png"
+            alt="Project logo"
+            />
+        </div>
+        
+        <div class="right-section">
+            <main class="login-card">
+                <h1>Welcome back!</h1>
+
+                <form>
+                <div class="field">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text" placeholder="Enter your username" required />
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Enter your password" required />
+                </div>
+
+                <button class="btn btn-login" type="submit">Log in</button>
+
+                <div class="divider">or log in with</div>
+
+                <button class="btn btn-social btn-google" type="button">Google</button>
+                <button class="btn btn-social btn-facebook" type="button">Facebook</button>
+                </form>
+
+                <p class="signup">No account, <a href="auth_signup.html">Sign up!</a></p>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
