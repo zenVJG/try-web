@@ -1,0 +1,327 @@
+<!-- Nhận nhiệm vụ | Take Mission - WATERWAY -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WATERWAY | Take Mission</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+        @font-face {
+            font-family: 'metropolis';
+            src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+        }
+        @font-face {
+            font-family: 'inter';
+            src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+        }
+        @font-face {
+            font-family: 'jetbrainsMono';
+            src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+        }
+        body { font-family: 'inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "primary-container": "#0047ab",
+                    "surface": "#fbf9f8",
+                    "on-primary-fixed": "#001946",
+                    "surface-container-highest": "#e4e2e1",
+                    "inverse-primary": "#b1c5ff",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#fbf9f8",
+                    "primary-fixed-dim": "#b1c5ff",
+                    "surface-dim": "#dcd9d9",
+                    "inverse-on-surface": "#f3f0f0",
+                    "surface-tint": "#2559bd",
+                    "on-primary-container": "#a5bdff",
+                    "error-container": "#ffdad6",
+                    "background": "#fbf9f8",
+                    "error": "#ba1a1a",
+                    "on-background": "#1b1c1c",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#004d62",
+                    "on-tertiary-fixed": "#001f29",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-variant": "#e4e2e1",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#303030",
+                    "tertiary-container": "#00546a",
+                    "on-primary-fixed-variant": "#00419e",
+                    "on-secondary-fixed-variant": "#00210c",
+                    "tertiary-fixed": "#baeaff",
+                    "primary-fixed": "#dae2ff",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#6bfe9c",
+                    "on-surface": "#1b1c1c",
+                    "on-surface-variant": "#434653",
+                    "primary": "#00327d",
+                    "on-tertiary-container": "#81c8e5",
+                    "outline": "#737784",
+                    "secondary-fixed": "#6bfe9c",
+                    "secondary-fixed-dim": "#4ae183",
+                    "secondary": "#006d37",
+                    "on-secondary-fixed-variant": "#005228",
+                    "tertiary-fixed-dim": "#89d0ed",
+                    "on-secondary-container": "#00743a",
+                    "outline-variant": "#c3c6d5",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "tertiary": "#003c4c",
+                    "surface-container-high": "#eae8e7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "12px",
+                    "stack-lg": "48px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "stack-md": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["metropolis"],
+                    "display-lg": ["metropolis"],
+                    "vietnamese-body": ["inter"],
+                    "title-md": ["metropolis"],
+                    "body-lg": ["inter"],
+                    "label-sm": ["jetbrainsMono"],
+                    "body-md": ["inter"],
+                    "headline-lg": ["metropolis"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["24px", {"lineLine": "32px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "vietnamese-body": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md dock full-width top-0 sticky border-b border-outline-variant/30 dark:border-outline/20 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-lg-mobile tracking-tight text-primary dark:text-primary-fixed">WATERWAY</div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="../index.html">Home</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="about.html">About</a>
+<a class="font-label-sm text-label-sm text-primary font-bold border-b-2 border-primary pb-1" href="takemission.html">Take Mission</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="createmission.html">Create Mission</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="certificate.html">Certification</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="account.html">Account</a></nav>
+<div class="flex items-center gap-4">
+<span class="text-secondary font-bold text-label-sm px-3 py-1 bg-secondary-container/20 rounded-full">EN | VN</span>
+<span class="material-symbols-outlined text-primary cursor-pointer">search</span>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col md:flex-row h-[calc(100vh-80px)] overflow-hidden">
+<!-- Interactive Mission Map -->
+<section class="relative flex-grow h-1/2 md:h-full bg-surface-container-low border-r border-outline-variant/30">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<!-- Map Placeholder with data-location -->
+<div class="w-full h-full bg-[#f0f4f8]" data-location="Da Nang, Vietnam" style="">
+<img class="w-full h-full object-cover opacity-60 mix-blend-multiply" data-alt="A clean, minimalist topographic map of a coastal city with intricate river networks and ocean boundaries. The map uses a professional palette of sky blues and soft greys with vibrant orange pulse markers indicating pollution hotspots. The aesthetic is modern and data-driven, emphasizing environmental transparency and geographic clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzHNyUQy1aMwHgx9xy7EBLwSfF0vNQkEzodNS3AjRYSrRqEGCq0Vcyt96yKIE0Q2oEhYsKF01HqQtXp8blcRo0U2huRLpWTHM6Gu7sGrf8Xulx9S2pzkszl74K7ulsdov43U7aCRABYjW5c4cDkcfJD4PiF7ZITR3OwF2bm0ynnOcSy5ugO5OJo6KluX-fEUhH4uyr1M7nEWb8QJUEqYv_p2nFmqHKKX3p-l7VIg0zlHUytLqeNaEhx3IGNHo8fmYTDFCVk3OUCv3K"/>
+</div>
+<!-- Hotspot Pulsing Markers -->
+<div class="absolute top-1/4 left-1/3 w-8 h-8 flex items-center justify-center">
+<div class="absolute inset-0 bg-error rounded-full animate-ping opacity-75"></div>
+<div class="relative w-4 h-4 bg-error rounded-full border-2 border-on-primary"></div>
+</div>
+<div class="absolute bottom-1/3 right-1/4 w-8 h-8 flex items-center justify-center">
+<div class="absolute inset-0 bg-error rounded-full animate-ping opacity-75"></div>
+<div class="relative w-4 h-4 bg-error rounded-full border-2 border-on-primary"></div>
+</div>
+</div>
+<!-- Map Controls -->
+<div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
+<button class="bg-surface/90 backdrop-blur p-2 rounded shadow-sm hover:bg-surface border border-outline-variant/30">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="bg-surface/90 backdrop-blur p-2 rounded shadow-sm hover:bg-surface border border-outline-variant/30">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<button class="bg-surface/90 backdrop-blur p-2 rounded shadow-sm hover:bg-surface border border-outline-variant/30">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+<!-- Floating Mission Detail Card (Active Selection) -->
+<div class="absolute bottom-6 left-6 z-20 max-w-md w-[90%] md:w-full">
+<div class="bg-surface/95 backdrop-blur-md rounded-xl border border-outline-variant/50 p-6 shadow-xl">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="font-label-sm text-label-sm text-error bg-error-container px-2 py-0.5 rounded mb-2 inline-block">CRITICAL HOTSPOT</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Han River Cleanup</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                16.0544° N, 108.2022° E
+                            </p>
+</div>
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg text-primary">250</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">PTS</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="p-3 bg-surface-container rounded-lg border border-outline-variant/20">
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Pollution Level</p>
+<div class="h-2 bg-outline-variant rounded-full overflow-hidden">
+<div class="h-full bg-error w-[85%]"></div>
+</div>
+<p class="font-label-sm text-label-sm text-error mt-1 text-right">Severe</p>
+</div>
+<div class="p-3 bg-surface-container rounded-lg border border-outline-variant/20">
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Participants</p>
+<p class="font-title-md text-title-md text-primary">12/20</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex gap-2">
+<button class="flex-1 py-3 bg-primary text-on-primary rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined">person</span>
+                                Individual
+                            </button>
+<button class="flex-1 py-3 border-2 border-primary text-primary rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-primary/5 transition-all">
+<span class="material-symbols-outlined">groups</span>
+                                Join a Team
+                            </button>
+</div>
+<div class="bg-tertiary-container/10 p-3 rounded-lg border border-tertiary-container/20 flex gap-3">
+<span class="material-symbols-outlined text-tertiary-container">auto_awesome</span>
+<p class="text-[12px] text-tertiary-container font-medium">AI Insight: High difficulty mission. Completion verified via photo analysis. Earn +50 bonus points for prompt submission.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sidebar: Missions & Progress -->
+<aside class="w-full md:w-[400px] bg-surface flex flex-col h-1/2 md:h-full z-30">
+<div class="flex flex-col h-full">
+<!-- Tabs -->
+<div class="flex border-b border-outline-variant/30">
+<button class="flex-1 py-4 font-label-sm text-label-sm text-primary border-b-2 border-primary font-bold">AVAILABLE</button>
+<button class="flex-1 py-4 font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-low transition-colors">RECOMMENDED</button>
+<button class="flex-1 py-4 font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-low transition-colors">ACTIVE</button>
+</div>
+<!-- Scrollable Content -->
+<div class="flex-grow overflow-y-auto p-margin-mobile">
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-4 tracking-widest">NEARBY MISSIONS</h3>
+<div class="space-y-4 mb-stack-lg">
+<!-- Mission Item -->
+<div class="p-4 rounded-xl border border-outline-variant/30 hover:border-primary transition-all cursor-pointer group">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">My Khe Beach Plastic</h4>
+<span class="bg-secondary-container/20 text-secondary-fixed-dim px-2 py-1 rounded font-label-sm text-[10px]">VERIFIED</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-3 line-clamp-2">Collective effort to remove macro-plastics from the northern coastline before high tide.</p>
+<div class="flex justify-between items-center">
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-dim"></div>
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-variant"></div>
+<div class="w-6 h-6 rounded-full border-2 border-surface flex items-center justify-center bg-primary text-[8px] text-on-primary">+5</div>
+</div>
+<span class="text-primary font-bold text-label-sm">150 PTS</span>
+</div>
+</div>
+<!-- Mission Item -->
+<div class="p-4 rounded-xl border border-outline-variant/30 hover:border-primary transition-all cursor-pointer group">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">Cổ Cò River Audit</h4>
+<span class="bg-error-container/20 text-error px-2 py-1 rounded font-label-sm text-[10px]">URGENT</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-3 line-clamp-2">Detailed water quality sampling and visual pollution documentation near the industrial zone.</p>
+<div class="flex justify-between items-center">
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-dim"></div>
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-primary text-[8px] text-on-primary">JD</div>
+</div>
+<span class="text-primary font-bold text-label-sm">300 PTS</span>
+</div>
+</div>
+</div>
+<!-- Submission Section -->
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-4 tracking-widest">MISSION EVIDENCE</h3>
+<div class="p-6 bg-surface-container rounded-xl border border-outline-variant/30 border-dashed">
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div class="aspect-square bg-surface border border-outline-variant/30 rounded flex flex-col items-center justify-center gap-2 cursor-pointer hover:bg-surface-bright transition-all">
+<span class="material-symbols-outlined text-primary">add_a_photo</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase">Before Photo</span>
+</div>
+<div class="aspect-square bg-surface border border-outline-variant/30 rounded flex flex-col items-center justify-center gap-2 cursor-pointer hover:bg-surface-bright transition-all">
+<span class="material-symbols-outlined text-primary">add_a_photo</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase">After Photo</span>
+</div>
+</div>
+<div class="text-center space-y-2">
+<p class="text-[12px] text-on-surface-variant italic">Upload geo-tagged images for AI verification.</p>
+<button class="w-full py-3 bg-secondary text-on-secondary rounded-lg font-bold opacity-50 cursor-not-allowed">
+                                Complete Mission
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe md:hidden bg-surface/90 dark:bg-surface-container-highest/90 backdrop-blur-lg border-t border-outline-variant/20 shadow-lg dark:shadow-none rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="../index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-secondary-fixed bg-secondary-container/20 dark:bg-secondary-container/10 rounded-xl px-3 py-1" href="takemission.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+<span class="font-label-sm text-label-sm">Missions</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="takemission.html">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label-sm text-label-sm">Impact</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="certificate.html">
+<span class="material-symbols-outlined">verified_user</span>
+<span class="font-label-sm text-label-sm">Certs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="account.html">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="font-label-sm text-label-sm">Account</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant/30 hidden md:block">
+<div class="w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim">WATERWAY</div>
+<div class="flex gap-stack-md">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-body-md text-body-md" href="#">Partner Portal</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-body-md text-body-md" href="#">Contact Support</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant">© 2024 WATERWAY. Protecting our blue planet.</p>
+</div>
+</footer>
+</body></html>

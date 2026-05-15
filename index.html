@@ -1,0 +1,314 @@
+<!-- Trang chủ | Home - WATERWAY -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/metropolis-font@1.0.0/index.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "primary-container": "#0047ab",
+                        "surface": "#fbf9f8",
+                        "on-primary-fixed": "#001946",
+                        "surface-container-highest": "#e4e2e1",
+                        "inverse-primary": "#b1c5ff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fbf9f8",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "surface-dim": "#dcd9d9",
+                        "inverse-on-surface": "#f3f0f0",
+                        "surface-tint": "#2559bd",
+                        "on-primary-container": "#a5bdff",
+                        "error-container": "#ffdad6",
+                        "background": "#fbf9f8",
+                        "error": "#ba1a1a",
+                        "on-background": "#1b1c1c",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#004d62",
+                        "on-tertiary-fixed": "#001f29",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-variant": "#e4e2e1",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#303030",
+                        "tertiary-container": "#00546a",
+                        "on-primary-fixed-variant": "#00419e",
+                        "on-secondary-fixed": "#00210c",
+                        "tertiary-fixed": "#baeaff",
+                        "primary-fixed": "#dae2ff",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#6bfe9c",
+                        "on-surface": "#1b1c1c",
+                        "on-surface-variant": "#434653",
+                        "primary": "#00327d",
+                        "on-tertiary-container": "#81c8e5",
+                        "outline": "#737784",
+                        "secondary-fixed": "#6bfe9c",
+                        "secondary-fixed-dim": "#4ae183",
+                        "secondary": "#006d37",
+                        "on-secondary-fixed-variant": "#005228",
+                        "tertiary-fixed-dim": "#89d0ed",
+                        "on-secondary-container": "#00743a",
+                        "outline-variant": "#c3c6d5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#f0eded",
+                        "tertiary": "#003c4c",
+                        "surface-container-high": "#eae8e7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "12px",
+                        "stack-lg": "48px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "stack-md": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["metropolis", "sans-serif"],
+                        "display-lg": ["metropolis", "sans-serif"],
+                        "vietnamese-body": ["inter", "sans-serif"],
+                        "title-md": ["metropolis", "sans-serif"],
+                        "body-lg": ["inter", "sans-serif"],
+                        "label-sm": ["jetbrainsMono", "monospace"],
+                        "body-md": ["inter", "sans-serif"],
+                        "headline-lg": ["metropolis", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "vietnamese-body": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-lg-mobile tracking-tight text-primary dark:text-primary-fixed">WATERWAY</div>
+<nav class="hidden md:flex items-center gap-stack-md">
+<a class="font-label-sm text-label-sm text-primary font-bold border-b-2 border-primary pb-1" href="index.html">Home</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="WATERWAY/about.html">About</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="WATERWAY/takemission.html">Take Mission</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="WATERWAY/createmission.html">Create Mission</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="WATERWAY/certificate.html">Certification</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="WATERWAY/account.html">Account</a>
+</nav>
+<div class="flex items-center gap-4">
+<!-- Bilingual Toggle -->
+<div class="flex items-center bg-surface-container-low rounded-full p-1 border border-outline-variant/30">
+<span class="px-3 py-1 text-label-sm font-label-sm bg-secondary-container text-on-secondary-container rounded-full">EN</span>
+<span class="px-3 py-1 text-label-sm font-label-sm text-on-surface-variant">VN</span>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img src="WATERWAY/anhhome.jpg" alt="Ảnh cùng thư mục">
+    <div class="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-2xl space-y-stack-md">
+<span class="font-label-sm text-label-sm text-primary-container tracking-widest uppercase">Global Water Protection Initiative</span>
+<h1 class="font-display-lg text-display-lg text-primary leading-tight">
+                        We need you. <br/>
+<span class="text-secondary">Our water is not just a resource. It's our lifeline.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Empowering communities to monitor, report, and restore our waterways through transparent data and collective action. Join the mission to protect our blue planet.
+                    </p>
+<!-- Auth Buttons -->
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-title-md text-title-md flex items-center justify-center gap-3 hover:bg-primary-container transition-all active:scale-95 shadow-lg shadow-primary/10">
+<img alt="Google Icon" class="w-6 h-6 bg-white rounded-full p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQUAP_Tzj-xq1UxmPJt6LtAobTFrJSAlWye89qeaZBfOkSF6n-8utK_XhuUT3ihnrZcApA1Uz26QkxKr-QXN_5s3cCu_L7XVQtSK_4qM3f0sBNcKuQ3-dTtoHnf9zcabEBm4OlWrerIRAMdJpelgrYtCbkwfgRPEMqdgrQ8tHEbH9_sIM3A-E9TF-L6KLtZ73OxueK8KlhwssT0uc-h7ZHuigcOU3JNna2xV5_IaD_qci142F4Jv4Sxjr5IwW39WhjExriUFjvY875"/>
+                            Login
+                        </button>
+<button class="border-2 border-primary text-primary px-8 py-4 rounded-xl font-title-md text-title-md hover:bg-primary/5 transition-all active:scale-95">
+                            Sign up
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Statistics Section (Bento Style) -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto -mt-20 relative z-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass-effect p-8 rounded-xl flex flex-col items-center text-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">groups</span>
+<h3 class="font-display-lg text-headline-lg text-primary">1,248</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Number of Teams</p>
+</div>
+<div class="glass-effect p-8 rounded-xl flex flex-col items-center text-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">person_celebrate</span>
+<h3 class="font-display-lg text-headline-lg text-primary">45,820</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Individuals</p>
+</div>
+<div class="glass-effect p-8 rounded-xl flex flex-col items-center text-center shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4">task_alt</span>
+<h3 class="font-display-lg text-headline-lg text-primary">8,102</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Completed Projects</p>
+</div>
+</div>
+</section>
+<!-- 'How We Do' Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<span class="font-label-sm text-label-sm text-secondary font-bold">OUR METHODOLOGY</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">How Do We Do</h2>
+<div class="w-16 h-1 bg-secondary mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<!-- Infographic Side -->
+<div class="space-y-stack-md">
+<div class="flex gap-6 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add_a_photo</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Field Images & GPS Updates</h4>
+<p class="text-on-surface-variant">Real-time reporting using our mobile app. Every photo is automatically timestamped and geotagged for absolute precision.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">map</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Live Pollution Visualization</h4>
+<p class="text-on-surface-variant">Reports are instantly rendered onto our interactive map, identifying critical pollution points for priority action.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">engineering</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Resource Allocation</h4>
+<p class="text-on-surface-variant">AI-driven matching connects local volunteer teams with verified pollution hotspots based on proximity and severity.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary mb-1">Verification & Impact</h4>
+<p class="text-on-surface-variant">Rigorous before/after image verification leads to points, badges, and unique cryptographically signed digital certificates.</p>
+</div>
+</div>
+</div>
+<!-- Visualization Side -->
+<div class="bg-white p-6 rounded-2xl border border-outline-variant/30 shadow-sm relative">
+<div class="aspect-video rounded-xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover" data-alt="A clean, professional digital map interface showing a coastal city with several orange and red pulse markers indicating water pollution points. The map style is minimalist and light, with soft blue ocean colors and light grey land masses. Overlaid on the map are floating data cards with clean typography and small bar graphs. The atmosphere is data-driven, urgent but organized, following a modern corporate environmental aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_ps0W660KV6u1glt8vo-2hnRB2-MfuuK1qtnUvI7Brh5kjUOZmVjXGmjxuPwbAG4OhcLtGVYvmmemO5yghzhqV9_kEZI6KjP3XmcBBfxV8QivmgRThk2JwYE0R9hiZysMYQI5fm0jeApvYlFuTUAXMilLOanRXY2GaTl3v--mL_NJ-3-2yWtu9EIlTECgjPfjqZN6vyJElIKus9ojG3xnY056ErwfWYlR6c6HIgAK0WudbmqYamdyRlHH-s0pu0OkZIjU_VCGXZw3"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="border border-outline-variant/50 rounded-lg p-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-2 uppercase">Before Intervention</span>
+<img src="WATERWAY/before.png" alt="Ảnh cùng thư mục"></div>
+<div class="border border-outline-variant/50 rounded-lg p-3">
+<span class="font-label-sm text-label-sm text-secondary block mb-2 uppercase font-bold">After Restoration</span>
+<img src="WATERWAY/after.png" alt="Ảnh cùng thư mục"></div>
+</div>
+<!-- Unique Certificate Badge -->
+<div class="absolute -bottom-6 -right-6 bg-white border-4 border-primary/10 p-4 rounded-xl shadow-xl max-w-[180px]">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-[10px] uppercase font-bold text-primary">Verified Clean</span>
+</div>
+<div class="font-label-sm text-[8px] text-on-surface-variant mb-1 font-mono">ID: WTR-99-AF23</div>
+<div class="h-1 w-full bg-secondary-container rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<div class="bg-primary-container p-stack-md md:p-stack-lg rounded-[2rem] text-on-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<h2 class="font-display-lg text-headline-lg mb-4">Start Your First Mission Today</h2>
+<p class="font-body-lg text-on-primary-container max-w-xl mx-auto mb-stack-md">
+                    Every piece of data matters. Every volunteer makes a difference. Become a guardian of our waterways.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-full font-title-md hover:bg-secondary-fixed transition-colors">Find Missions Nearby</button>
+<button class="bg-on-primary text-primary px-8 py-3 rounded-full font-title-md hover:bg-surface-variant transition-colors">Learn More</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant/30">
+<div class="w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base max-w-container-max mx-auto">
+<div class="flex flex-col gap-2">
+<div class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim">WATERWAY</div>
+<p class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md">© 2024 WATERWAY. Protecting our blue planet.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-stack-md">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Partner Portal</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+<!-- Bottom Nav Bar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe md:hidden bg-surface/90 dark:bg-surface-container-highest/90 backdrop-blur-lg border-t border-outline-variant/20 rounded-t-xl shadow-lg dark:shadow-none">
+<a class="flex flex-col items-center justify-center text-primary dark:text-secondary-fixed bg-secondary-container/20 dark:bg-secondary-container/10 rounded-xl px-3 py-1 scale-90" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-dim transition-colors" href="WATERWAY/about.html">
+<span class="material-symbols-outlined">water_drop</span>
+<span class="font-label-sm text-label-sm">Missions</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-dim transition-colors" href="WATERWAY/takemission.html">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label-sm text-label-sm">Impact</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-dim transition-colors" href="WATERWAY/certificate.html">
+<span class="material-symbols-outlined">verified_user</span>
+<span class="font-label-sm text-label-sm">Certs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-dim transition-colors" href="WATERWAY/account.html">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="font-label-sm text-label-sm">Account</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,350 @@
+<!-- Chứng nhận | Certification - WATERWAY -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+        @font-face {
+            font-family: 'metropolis';
+            src: url('https://fonts.cdnfonts.com/css/metropolis');
+        }
+        @font-face {
+            font-family: 'inter';
+            src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        }
+        @font-face {
+            font-family: 'jetbrainsMono';
+            src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+        }
+        body {
+            font-family: 'inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        .certificate-border {
+            border: 8px double #c3c6d5;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "primary-container": "#0047ab",
+                        "surface": "#fbf9f8",
+                        "on-primary-fixed": "#001946",
+                        "surface-container-highest": "#e4e2e1",
+                        "inverse-primary": "#b1c5ff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fbf9f8",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "surface-dim": "#dcd9d9",
+                        "inverse-on-surface": "#f3f0f0",
+                        "surface-tint": "#2559bd",
+                        "on-primary-container": "#a5bdff",
+                        "error-container": "#ffdad6",
+                        "background": "#fbf9f8",
+                        "error": "#ba1a1a",
+                        "on-background": "#1b1c1c",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#004d62",
+                        "on-tertiary-fixed": "#001f29",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-variant": "#e4e2e1",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#303030",
+                        "tertiary-container": "#00546a",
+                        "on-primary-fixed-variant": "#00419e",
+                        "on-secondary-fixed": "#00210c",
+                        "tertiary-fixed": "#baeaff",
+                        "primary-fixed": "#dae2ff",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#6bfe9c",
+                        "on-surface": "#1b1c1c",
+                        "on-surface-variant": "#434653",
+                        "primary": "#00327d",
+                        "on-tertiary-container": "#81c8e5",
+                        "outline": "#737784",
+                        "secondary-fixed": "#6bfe9c",
+                        "secondary-fixed-dim": "#4ae183",
+                        "secondary": "#006d37",
+                        "on-secondary-fixed-variant": "#005228",
+                        "tertiary-fixed-dim": "#89d0ed",
+                        "on-secondary-container": "#00743a",
+                        "outline-variant": "#c3c6d5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#f0eded",
+                        "tertiary": "#003c4c",
+                        "surface-container-high": "#eae8e7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "12px",
+                        "stack-lg": "48px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "stack-md": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["metropolis"],
+                        "display-lg": ["metropolis"],
+                        "vietnamese-body": ["inter"],
+                        "title-md": ["metropolis"],
+                        "body-lg": ["inter"],
+                        "label-sm": ["jetbrainsMono"],
+                        "body-md": ["inter"],
+                        "headline-lg": ["metropolis"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "vietnamese-body": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md docked full-width top-0 sticky border-b border-outline-variant/30 dark:border-outline/20 z-50">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-lg-mobile tracking-tight text-primary dark:text-primary-fixed">WATERWAY</div>
+<div class="hidden md:flex items-center gap-stack-md">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="../index.html">Home</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="about.html">About</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="takemission.html">Take Mission</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="createmission.html">Create Mission</a>
+<a class="font-label-sm text-label-sm text-primary font-bold border-b-2 border-primary pb-1" href="certificate.html">Certification</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="account.html">Account</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    EN | VN
+                </div>
+</div>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+<!-- Header Section -->
+<section class="mb-stack-lg flex flex-col md:flex-row md:items-end justify-between gap-stack-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary">Mission Certification</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Validate your environmental impact. Convert your contribution points into institutional certificates recognized by global water authorities.</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative flex-grow md:w-80">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:outline-none font-body-md text-body-md" placeholder="Verify Certificate by ID" type="text"/>
+</div>
+</div>
+</section>
+<!-- Bento Grid Dashboard -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-stack-lg">
+<!-- Points Summary Card -->
+<div class="md:col-span-4 bg-surface-container-lowest p-stack-md rounded-xl border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-stack-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Impact Points</span>
+<span class="material-symbols-outlined text-primary" data-weight="fill">water_drop</span>
+</div>
+<div class="font-display-lg text-display-lg text-primary">12,450</div>
+<p class="font-body-md text-body-md text-secondary font-medium mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                        +12% from last month
+                    </p>
+</div>
+<div class="mt-stack-md">
+<button class="w-full bg-primary text-on-primary py-3 rounded-lg font-title-md text-title-md hover:bg-primary-container transition-all active:scale-95 duration-150">
+                        Exchange points for certificate
+                    </button>
+</div>
+</div>
+<!-- Breakdown Chart (Visual Representation) -->
+<div class="md:col-span-8 bg-surface-container-lowest p-stack-md rounded-xl border border-outline-variant/30">
+<div class="flex justify-between items-center mb-stack-md">
+<h3 class="font-title-md text-title-md text-on-surface">Contribution Breakdown</h3>
+<div class="flex gap-2 bg-surface-container rounded-lg p-1">
+<button class="px-3 py-1 font-label-sm text-label-sm rounded-md bg-white shadow-sm">Monthly</button>
+<button class="px-3 py-1 font-label-sm text-label-sm text-on-surface-variant">Quarterly</button>
+<button class="px-3 py-1 font-label-sm text-label-sm text-on-surface-variant">Yearly</button>
+</div>
+</div>
+<div class="h-48 flex items-end justify-between gap-2 px-4">
+<!-- Simple Bar Chart Elements -->
+<div class="w-full flex flex-col items-center gap-2">
+<div class="w-full bg-primary/10 rounded-t-sm h-[40%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jan</span>
+</div>
+<div class="w-full flex flex-col items-center gap-2">
+<div class="w-full bg-primary/20 rounded-t-sm h-[60%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Feb</span>
+</div>
+<div class="w-full flex flex-col items-center gap-2">
+<div class="w-full bg-primary rounded-t-sm h-[90%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mar</span>
+</div>
+<div class="w-full flex flex-col items-center gap-2">
+<div class="w-full bg-primary/30 rounded-t-sm h-[50%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Apr</span>
+</div>
+<div class="w-full flex flex-col items-center gap-2">
+<div class="w-full bg-primary/10 rounded-t-sm h-[30%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">May</span>
+</div>
+<div class="w-full flex flex-col items-center gap-2">
+<div class="w-full bg-primary/40 rounded-t-sm h-[70%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jun</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Certificate Preview & Details -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Certificate Layout -->
+<div class="lg:col-span-8 bg-white p-8 md:p-12 certificate-border relative overflow-hidden shadow-xl">
+<!-- Watermark Background -->
+<div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+<span class="material-symbols-outlined text-[400px]">water_drop</span>
+</div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-stack-lg">
+<div class="font-display-lg text-headline-lg tracking-tight text-primary">WATERWAY</div>
+<div class="flex gap-4">
+<img alt="Partner Logo" class="h-10 grayscale opacity-70" data-alt="A clean, minimalist vector logo of an environmental protection agency, professional corporate design, sharp lines, light mode background, sophisticated navy blue and grey colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC98I-7mdAF07dS-FcdCoIwxq0kBqEFxlmO3b6kUmEFyZPb80xGW0lJ06a_eJff4suC4IoVX5AUiZ1WpRJt_abJ7vMkCHawemAFxjDEAZrF5lQxtBlu1hd-HwPr5N1Hrd7bYTaQH5YfTnw-j7XnP84snNRl45GW6muM7uXYb3DChMGYdLgo34VdNahYMOEOr6XAB0JRHuWxqyJkm6jqHOu4CZwfCXVepBNXj1RK5GYbGIWaSXzM_TmYwyRR7dnHHcW-MhQnR0ZBlyp"/>
+<img alt="Partner Logo" class="h-10 grayscale opacity-70" data-alt="A modern crest logo for a global water conservation organization, clean geometric shapes, institutional style, professional corporate aesthetics, high-key lighting, soft grey palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArv9rFea9XvNjDIBouf4AkVnhqerF8okFide6cxGkcpbEtvRs5SvIRgIV7jbNP9zbygnzGHo-POls85J7B97F4cvWZejM0mm4RMyRc9WgtYuj9O6FpaNBMvJhfGjJse_vy_dS8YOdwKbM2CxI7h8WpSrEZ-IT-DxE6PCzH9sWyEDbjChxurKOH6Fzqyo89WsxXNFmBtjAWw0s6tb1t_DUpik53hWall4ijz4aXwllPbzmt1eS3XhzM0d8UQVNf6-BQ-AZSFi4GuldK"/>
+</div>
+</div>
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-2">CERTIFICATE OF IMPACT</h2>
+<p class="font-body-md text-body-md text-on-surface-variant italic">This institutional document recognizes the significant contribution to waterway preservation</p>
+</div>
+<div class="text-center mb-stack-lg">
+<p class="font-label-sm text-label-sm text-outline mb-1 uppercase">Awarded To</p>
+<h3 class="font-display-lg text-headline-lg text-primary border-b border-outline-variant inline-block px-8 pb-2">Alex Nguyen Dinh</h3>
+</div>
+<div class="grid grid-cols-2 gap-stack-md mt-12 pt-8 border-t border-outline-variant/30">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">User Account ID</p>
+<p class="font-label-sm text-label-sm text-on-background font-bold tracking-widest">WW-US-7729-01X</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Certificate ID</p>
+<p class="font-label-sm text-label-sm text-on-background font-bold tracking-widest">CERT-2024-V3-K92L</p>
+</div>
+<div class="mt-4">
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Issue Date</p>
+<p class="font-label-sm text-label-sm text-on-background">October 24, 2024</p>
+</div>
+<div class="mt-4 text-right flex flex-col items-end">
+<div class="w-32 h-1 bg-on-background/10 mb-2"></div>
+<p class="font-label-sm text-label-sm text-on-background italic">Authorized Signature</p>
+<p class="font-label-sm text-label-sm text-primary font-bold">WATERWAY REGISTRY</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Certification Benefits & Rules -->
+<div class="lg:col-span-4 flex flex-col gap-gutter">
+<div class="bg-surface-container p-stack-md rounded-xl border border-outline-variant/30">
+<h4 class="font-title-md text-title-md text-on-surface mb-stack-sm">Why Get Certified?</h4>
+<ul class="space-y-4">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Official recognition for governmental and NGO environmental grants.</p>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Unlock "Lead Guardian" status within the Waterway community.</p>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Publicly verifiable transparency via blockchain-linked ID.</p>
+</li>
+</ul>
+</div>
+<div class="bg-primary/5 p-stack-md rounded-xl border border-primary/10">
+<h4 class="font-title-md text-title-md text-primary mb-stack-sm">Level Progress</h4>
+<div class="w-full h-2 bg-primary/10 rounded-full overflow-hidden mb-2">
+<div class="bg-primary h-full w-[82%]"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Current: Tier 3</span>
+<span>82% to Master Guardian</span>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full flex items-center justify-center gap-2 border border-primary text-primary py-3 rounded-lg font-title-md text-title-md hover:bg-primary/5 transition-all">
+<span class="material-symbols-outlined">download</span>
+                        Download PDF Version
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant/30 w-full mt-stack-lg">
+<div class="w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim">WATERWAY</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Partner Portal</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Contact Support</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant">© 2024 WATERWAY. Protecting our blue planet.</div>
+</div>
+</footer>
+
+<!-- BottomNavBar (Mobile only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe md:hidden bg-surface/90 dark:bg-surface-container-highest/90 backdrop-blur-lg border-t border-outline-variant/20 rounded-t-xl shadow-lg">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="../index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="takemission.html">
+<span class="material-symbols-outlined">water_drop</span>
+<span class="font-label-sm text-label-sm">Missions</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="takemission.html">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label-sm text-label-sm">Impact</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-secondary-fixed bg-secondary-container/20 dark:bg-secondary-container/10 rounded-xl px-3 py-1" href="certificate.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-sm text-label-sm font-bold">Certs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="account.html">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="font-label-sm text-label-sm">Account</span>
+</a>
+</nav>
+
+</body></html>
