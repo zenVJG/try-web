@@ -1,205 +1,211 @@
 <!-- Tạo nhiệm vụ | Create Mission - WATERWAY -->
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>WATERWAY | Create Mission</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<style>
-        @font-face {
-            font-family: 'metropolis';
-            src: url('https://fonts.cdnfonts.com/s/14883/Metropolis-Bold.woff') format('woff');
-            font-weight: 700;
-        }
-        @font-face {
-            font-family: 'metropolis';
-            src: url('https://fonts.cdnfonts.com/s/14883/Metropolis-SemiBold.woff') format('woff');
-            font-weight: 600;
-        }
-        body { font-family: 'Inter', sans-serif; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-        }
-</style>
-<script src="../components/tailwind.config.css"></script>
-</head>
-<body class="bg-background text-on-surface min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<header class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 dark:border-outline/20">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<h1 class="font-display-lg text-headline-lg-mobile tracking-tight text-primary dark:text-primary-fixed">WATERWAY</h1>
-<nav class="hidden md:flex gap-gutter items-center">
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="../index.html">Home</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="about.html">About</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="takemission.html">Take Mission</a>
-<a class="font-label-sm text-label-sm text-primary font-bold border-b-2 border-primary pb-1" href="createmission.html">Create Mission</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="certificate.html">Certification</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="account.html">Account</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="bg-secondary-container/20 px-3 py-1 rounded-full text-secondary font-label-sm text-label-sm border border-secondary/20">
-                    EN | <span class="opacity-50">VN</span>
-</button>
-</div>
-</div>
-</header>
-<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-md">
-<!-- Breadcrumb / Header Section -->
-<div class="mb-stack-md">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Create Mission / Tạo Nhiệm Vụ</h2>
-<p class="text-on-surface-variant font-body-md text-body-md max-w-2xl">
-                Identify a new pollution hotspot to mobilize community action. Your data helps keep our blue planet clean.
-                <br/>
-<span class="text-secondary font-bold italic">Tạo điểm nóng ô nhiễm mới để huy động hành động cộng đồng.</span>
-</p>
-</div>
-<!-- Create Mission Grid -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
-<!-- Left Column: Interactive Map -->
-<div class="lg:col-span-7 space-y-stack-sm">
-<div class="relative w-full aspect-video md:aspect-[16/10] bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm">
-<!-- Map Placeholder -->
-<img class="w-full h-full object-cover" data-alt="A high-resolution satellite map view of a coastal urban area with rivers and waterways, featuring a clean digital interface overlay. The lighting is bright and clear, reflecting a professional environmental monitoring tool. The color palette is dominated by deep ocean blues and lush greens, with subtle UI markers in warning orange. The style is modern, technical, and data-driven." data-location="Ho Chi Minh City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTHiIZfzZe4JdISn89uXq4cJsqdpFC-AG9gvTsXOKuTYQ-xVBljT_k7Dd_0woC9290ETEtPhvA5YjQihuFpt3T_PQiRAKL1Qtg3jt-n4xtQNQPkfjIRZGIoTts2AscHey5evSo2Lcw4YjD030BInQopiFOa1KFWVkitbBZrdZGPYHDraBg1di0tEFdpLDV-TJ7KnRhnGZD-OCeXxwu0CP9DODS6-2udoiz7tfvUf4HLUZmW31-yw4d0hS4qa8eChVK-upJE1r3J-n7"/>
-<!-- Map Controls -->
-<div class="absolute top-4 left-4 flex flex-col gap-2">
-<button class="bg-surface p-2 rounded-lg shadow-md border border-outline-variant hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-primary">add</span>
-</button>
-<button class="bg-surface p-2 rounded-lg shadow-md border border-outline-variant hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-primary">remove</span>
-</button>
-</div>
-<!-- Centered Pin Indicator -->
-<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-<div class="flex flex-col items-center">
-<div class="bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-label-sm mb-1 shadow-lg border border-white/20">Drop Point Here</div>
-<span class="material-symbols-outlined text-error text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
-</div>
-</div>
-<!-- Location Badge -->
-<div class="absolute bottom-4 left-4 glass-panel px-4 py-2 rounded-xl border border-white/40 flex items-center gap-2">
-<span class="material-symbols-outlined text-primary-container">my_location</span>
-<div>
-<p class="font-label-sm text-[10px] uppercase opacity-60">Current Coordinates</p>
-<p class="font-label-sm text-label-sm text-on-surface">10.7626° N, 106.6602° E</p>
-</div>
-</div>
-</div>
-<!-- Warning Notification -->
-<div class="flex gap-3 p-4 bg-error-container/20 rounded-xl border border-error/10">
-<span class="material-symbols-outlined text-error">warning</span>
-<div class="space-y-1">
-<p class="font-label-sm text-label-sm text-on-error-container">Missions cannot be duplicated within 5m scale.</p>
-<p class="font-label-sm text-label-sm text-on-error-container italic opacity-80 font-vietnamese-body">Nhiệm vụ không được trùng lặp trong phạm vi 5m.</p>
-</div>
-</div>
-</div>
-<!-- Right Column: Form -->
-<div class="lg:col-span-5 bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant/30">
-<form class="space-y-6">
-<!-- Description -->
-<div class="space-y-2">
-<label class="block font-title-md text-on-surface flex justify-between items-center">
-                            Pollution Description
-                            <span class="text-xs font-label-sm text-outline font-normal">Mô tả ô nhiễm</span>
-</label>
-<textarea class="w-full rounded-lg border-outline-variant bg-surface-container-low focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md" placeholder="Describe the waste type, extent, and accessibility..." rows="3"></textarea>
-</div>
-<!-- Pollution Levels -->
-<div class="space-y-2">
-<label class="block font-title-md text-on-surface flex justify-between items-center">
-                            Pollution Level (1-5)
-                            <span class="text-xs font-label-sm text-outline font-normal">Mức độ ô nhiễm</span>
-</label>
-<div class="grid grid-cols-5 gap-2">
-<button class="py-3 rounded-lg border border-outline-variant bg-surface hover:bg-secondary-container/10 text-primary font-label-sm transition-all border-b-4 border-b-secondary-fixed" type="button">1</button>
-<button class="py-3 rounded-lg border border-outline-variant bg-surface hover:bg-secondary-container/10 text-primary font-label-sm transition-all" type="button">2</button>
-<button class="py-3 rounded-lg border border-outline-variant bg-surface hover:bg-secondary-container/10 text-primary font-label-sm transition-all" type="button">3</button>
-<button class="py-3 rounded-lg border border-outline-variant bg-surface hover:bg-secondary-container/10 text-primary font-label-sm transition-all" type="button">4</button>
-<button class="py-3 rounded-lg border border-outline-variant bg-surface hover:bg-secondary-container/10 text-primary font-label-sm transition-all" type="button">5</button>
-</div>
-<div class="flex justify-between px-1">
-<span class="text-[10px] font-label-sm text-secondary uppercase tracking-wider">Minor</span>
-<span class="text-[10px] font-label-sm text-error uppercase tracking-wider">Critical</span>
-</div>
-</div>
-<!-- Image Upload Area -->
-<div class="space-y-2">
-<label class="block font-title-md text-on-surface flex justify-between items-center">
-                            Photo Evidence
-                            <span class="text-xs font-label-sm text-outline font-normal">Hình ảnh minh chứng</span>
-</label>
-<div class="border-2 border-dashed border-outline-variant rounded-xl p-8 text-center bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
-<span class="material-symbols-outlined text-primary text-4xl mb-2 group-hover:scale-110 transition-transform">add_a_photo</span>
-<p class="font-body-md text-body-md text-on-surface-variant">Tap to upload pollution photos</p>
-<p class="text-[10px] font-label-sm text-outline uppercase mt-1">JPEG, PNG up to 10MB</p>
-</div>
-</div>
-<!-- Success / Reward Indicator -->
-<div class="flex items-center gap-3 p-4 bg-secondary-container/10 rounded-xl border border-secondary/20">
-<div class="bg-secondary p-2 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">stars</span>
-</div>
-<div class="space-y-0.5">
-<p class="font-label-sm text-label-sm text-on-secondary-container font-bold">Automatic points rewarded upon successful creation</p>
-<p class="font-label-sm text-xs text-on-secondary-container italic opacity-75 font-vietnamese-body">Điểm thưởng sẽ được tự động cộng sau khi tạo thành công.</p>
-</div>
-</div>
-<!-- Submit Button -->
-<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-title-md hover:bg-primary-container transition-all shadow-md active:scale-[0.98]" type="submit">
-                        Publish Mission / Đăng Nhiệm Vụ
-</button>
-</form>
-</div>
-</div>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant/30 mt-stack-lg">
-<div class="w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base max-w-container-max mx-auto">
-<div class="flex flex-col items-center md:items-start gap-2">
-<span class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim">WATERWAY</span>
-<p class="text-on-surface-variant font-body-md text-body-md text-center md:text-left">© 2024 WATERWAY. Protecting our blue planet.</p>
-</div>
-<div class="flex flex-wrap justify-center gap-gutter">
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Terms of Service</a>
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Partner Portal</a>
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Contact Support</a>
-</div>
-</div>
-</footer>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>WATERWAY | Create Mission</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <style>
+      @font-face {
+      font-family: 'metropolis';
+      src: url('https://fonts.cdnfonts.com/s/14883/Metropolis-Bold.woff') format('woff');
+      font-weight: 700;
+      }
+      @font-face {
+      font-family: 'metropolis';
+      src: url('https://fonts.cdnfonts.com/s/14883/Metropolis-SemiBold.woff') format('woff');
+      font-weight: 600;
+      }
+      body { font-family: 'Inter', sans-serif; }
+      .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-panel {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      }
+    </style>
+    <script src="../components/tailwind.config.js"></script>
 
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe md:hidden bg-surface/90 dark:bg-surface-container-highest/90 backdrop-blur-lg border-t border-outline-variant/20 rounded-t-xl shadow-lg">
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="../index.html">
-<span class="material-symbols-outlined">home</span>
-<span class="font-label-sm text-label-sm">Home</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="takemission.html">
-<span class="material-symbols-outlined">water_drop</span>
-<span class="font-label-sm text-label-sm">Missions</span>
-</a>
-<a class="flex flex-col items-center justify-center text-primary dark:text-secondary-fixed bg-secondary-container/20 dark:bg-secondary-container/10 rounded-xl px-3 py-1 scale-90" href="createmission.html">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_circle</span>
-<span class="font-label-sm text-label-sm font-bold">Create</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="certificate.html">
-<span class="material-symbols-outlined">verified_user</span>
-<span class="font-label-sm text-label-sm">Certs</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="account.html">
-<span class="material-symbols-outlined">account_circle</span>
-<span class="font-label-sm text-label-sm">Account</span>
-</a>
-</nav>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-</body></html>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+  </head>
+  <body class="bg-background text-on-surface min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+    <header class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 dark:border-outline/20">
+      <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+        <h1 class="font-display-lg text-headline-lg-mobile tracking-tight text-primary dark:text-primary-fixed">WATERWAY</h1>
+        <nav class="hidden md:flex gap-gutter items-center">
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="../index.html">Home</a>
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="about.html">About</a>
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="takemission.html">Take Mission</a>
+          <a class="font-label-sm text-label-sm text-primary font-bold border-b-2 border-primary pb-1" href="createmission.html">Create Mission</a>
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="certificate.html">Certification</a>
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="account.html">Account</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="bg-secondary-container/20 px-3 py-1 rounded-full text-secondary font-label-sm text-label-sm border border-secondary/20">
+            EN | <span class="opacity-50">VN</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-md">
+      <!-- Breadcrumb / Header Section -->
+      <div class="mb-stack-md">
+        <h2 class="font-headline-lg text-headline-lg text-primary mb-2">Create Mission / Tạo Nhiệm Vụ</h2>
+        <p class="text-on-surface-variant font-body-md text-body-md max-w-2xl">
+          Identify a new pollution hotspot to mobilize community action. Your data helps keep our blue planet clean.
+          <br/>
+          <span class="text-secondary font-bold italic">Tạo điểm nóng ô nhiễm mới để huy động hành động cộng đồng.</span>
+        </p>
+      </div>
+      <!-- Create Mission Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+        <!-- Left Column: Interactive Map -->
+        <div class="lg:col-span-7 space-y-stack-sm">
+          <div class="relative w-full aspect-video md:aspect-[16/10] bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm z-0">
+    
+            <div id="map" class="w-full h-full"></div>
+
+            <div class="absolute bottom-4 left-4 glass-panel px-4 py-2 rounded-xl border border-white/40 flex items-center gap-2 z-[400] pointer-events-none">
+                <span class="material-symbols-outlined text-primary-container">my_location</span>
+                <div>
+                    <p class="font-label-sm text-[10px] uppercase opacity-60">Current Coordinates</p>
+                    <p id="coord-display" class="font-label-sm text-label-sm text-on-surface">Chưa chọn vị trí</p>
+                </div>
+            </div>
+
+        </div>
+          <!-- Warning Notification -->
+          <div class="flex gap-3 p-4 bg-error-container/20 rounded-xl border border-error/10">
+            <span class="material-symbols-outlined text-error">warning</span>
+            <div class="space-y-1">
+              <p class="font-label-sm text-label-sm text-on-error-container">Missions cannot be duplicated within 5m scale.</p>
+              <p class="font-label-sm text-label-sm text-on-error-container italic opacity-80 font-vietnamese-body">Nhiệm vụ không được trùng lặp trong phạm vi 5m.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column: Form -->
+        <div class="lg:col-span-5 bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant/30">
+          <form class="space-y-6">
+            <!-- Description -->
+            <div class="space-y-2">
+              <label class="block font-title-md text-on-surface flex justify-between items-center">
+                Pollution Description
+                <span class="text-xs font-label-sm text-outline font-normal">Mô tả ô nhiễm</span>
+              </label>
+              <textarea class="w-full rounded-lg border-outline-variant bg-surface-container-low focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md" placeholder="Describe the waste type, extent, and accessibility..." rows="3"></textarea>
+            </div>
+            <!-- Pollution Levels -->
+            <div class="space-y-2">
+              <label class="block font-title-md text-on-surface flex justify-between items-center">
+                Pollution Level (1-5)
+                <span class="text-xs font-label-sm text-outline font-normal">Mức độ ô nhiễm</span>
+              </label>
+              <div class="grid grid-cols-5 gap-2">
+                <button class="py-3 rounded-lg border border-outline-variant bg-surface hover:bg-secondary-container/10 text-primary font-label-sm transition-all border-b-4 border-b-secondary-fixed" type="button">1</button>
+                <button class="py-3 rounded-lg border border-outline-variant bg-surface hover:bg-secondary-container/10 text-primary font-label-sm transition-all" type="button">2</button>
+                <button class="py-3 rounded-lg border border-outline-variant bg-surface hover:bg-secondary-container/10 text-primary font-label-sm transition-all" type="button">3</button>
+                <button class="py-3 rounded-lg border border-outline-variant bg-surface hover:bg-secondary-container/10 text-primary font-label-sm transition-all" type="button">4</button>
+                <button class="py-3 rounded-lg border border-outline-variant bg-surface hover:bg-secondary-container/10 text-primary font-label-sm transition-all" type="button">5</button>
+              </div>
+              <div class="flex justify-between px-1">
+                <span class="text-[10px] font-label-sm text-secondary uppercase tracking-wider">Minor</span>
+                <span class="text-[10px] font-label-sm text-error uppercase tracking-wider">Critical</span>
+              </div>
+            </div>
+            <!-- Image Upload Area -->
+            <div class="space-y-2">
+              <label class="block font-title-md text-on-surface flex justify-between items-center">
+                Photo Evidence
+                <span class="text-xs font-label-sm text-outline font-normal">Hình ảnh minh chứng</span>
+              </label>
+              <div class="border-2 border-dashed border-outline-variant rounded-xl p-8 text-center bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+                <span class="material-symbols-outlined text-primary text-4xl mb-2 group-hover:scale-110 transition-transform">add_a_photo</span>
+                <p class="font-body-md text-body-md text-on-surface-variant">Tap to upload pollution photos</p>
+                <p class="text-[10px] font-label-sm text-outline uppercase mt-1">JPEG, PNG up to 10MB</p>
+              </div>
+            </div>
+            <!-- Success / Reward Indicator -->
+            <div class="flex items-center gap-3 p-4 bg-secondary-container/10 rounded-xl border border-secondary/20">
+              <div class="bg-secondary p-2 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">stars</span>
+              </div>
+              <div class="space-y-0.5">
+                <p class="font-label-sm text-label-sm text-on-secondary-container font-bold">Automatic points rewarded upon successful creation</p>
+                <p class="font-label-sm text-xs text-on-secondary-container italic opacity-75 font-vietnamese-body">Điểm thưởng sẽ được tự động cộng sau khi tạo thành công.</p>
+              </div>
+            </div>
+            <!-- Submit Button -->
+            <button class="w-full bg-primary text-on-primary py-4 rounded-xl font-title-md hover:bg-primary-container transition-all shadow-md active:scale-[0.98]" type="submit">
+              Publish Mission / Đăng Nhiệm Vụ
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant/30 mt-stack-lg">
+      <div class="w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base max-w-container-max mx-auto">
+        <div class="flex flex-col items-center md:items-start gap-2">
+          <span class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim">WATERWAY</span>
+          <p class="text-on-surface-variant font-body-md text-body-md text-center md:text-left">© 2024 WATERWAY. Protecting our blue planet.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-gutter">
+          <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Privacy Policy</a>
+          <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Terms of Service</a>
+          <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Partner Portal</a>
+          <a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-sm text-label-sm" href="#">Contact Support</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe md:hidden bg-surface/90 dark:bg-surface-container-highest/90 backdrop-blur-lg border-t border-outline-variant/20 rounded-t-xl shadow-lg">
+      <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="../index.html">
+        <span class="material-symbols-outlined">home</span>
+        <span class="font-label-sm text-label-sm">Home</span>
+      </a>
+      <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="takemission.html">
+        <span class="material-symbols-outlined">water_drop</span>
+        <span class="font-label-sm text-label-sm">Missions</span>
+      </a>
+      <a class="flex flex-col items-center justify-center text-primary dark:text-secondary-fixed bg-secondary-container/20 dark:bg-secondary-container/10 rounded-xl px-3 py-1 scale-90" href="createmission.html">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+        <span class="font-label-sm text-label-sm font-bold">Create</span>
+      </a>
+      <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="certificate.html">
+        <span class="material-symbols-outlined">verified_user</span>
+        <span class="font-label-sm text-label-sm">Certs</span>
+      </a>
+      <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="account.html">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span class="font-label-sm text-label-sm">Account</span>
+      </a>
+    </nav>
+  </body>
+
+  <script src="../components/map.js"></script>
+  <script>
+    window.onload = function() {
+        const createMissionMap = new WaterwayMap({
+            mapId: "map",                 
+            coordId: "coord-display",     
+            isReadOnly: false,            
+            defaultLocation: { lat: 21.0285, lng: 105.8542 } 
+        });
+        createMissionMap.init();
+    };
+  </script>
+</html>
