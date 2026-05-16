@@ -36,7 +36,7 @@
       About
      </a>
      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="../page/takemission.html">
-      Take Mission
+      Current Missions
      </a>
      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="../page/createmission.html">
       Create Mission
@@ -63,9 +63,9 @@
   </header>
   <main>
    <!-- Hero Section -->
-   <section class="relative h-[870px] flex items-center overflow-hidden">
+   <section class="relative h-[750px] flex items-center overflow-hidden">
     <div class="absolute inset-0 z-0">
-     <img alt="Ảnh cùng thư mục" src="../image/anhhome.jpg"/>
+     <img class="w-full h-full object-cover object-bottom" alt="Ảnh cùng thư mục" src="../image/anhhome.jpg"/>
      <div class="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/40 to-transparent">
      </div>
     </div>
@@ -78,7 +78,7 @@
        We need you.
        <br/>
        <span class="text-secondary">
-        Our water is not just a resource. It's our lifeline.
+        Every drop of water shapes the flow, every individual shapes the changes
        </span>
       </h1>
       <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
@@ -266,12 +266,16 @@
       Every piece of data matters. Every volunteer makes a difference. Become a guardian of our waterways.
      </p>
      <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <form action="page/takemission.html" method="get">
       <button class="bg-secondary text-on-secondary px-8 py-3 rounded-full font-title-md hover:bg-secondary-fixed transition-colors">
        Find Missions Nearby
       </button>
+      </form>
+      <form action="page/about.html" method="get">
       <button class="bg-on-primary text-primary px-8 py-3 rounded-full font-title-md hover:bg-surface-variant transition-colors">
        Learn More
       </button>
+      </form>
      </div>
     </div>
    </section>

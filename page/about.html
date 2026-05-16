@@ -9,241 +9,243 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <style>
-        @font-face {
-            font-family: 'metropolis';
-            src: url('https://fonts.cdnfonts.com/s/14883/Metropolis-Bold.woff') format('woff');
-            font-weight: 700;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'metropolis';
-            src: url('https://fonts.cdnfonts.com/s/14883/Metropolis-SemiBold.woff') format('woff');
-            font-weight: 600;
-            font-style: normal;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
+  @font-face {
+  font-family: 'metropolis';
+  src: url('https://fonts.cdnfonts.com/s/14883/Metropolis-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  }
+  @font-face {
+  font-family: 'metropolis';
+  src: url('https://fonts.cdnfonts.com/s/14883/Metropolis-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  }
+  .material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  }
 </style>
 <script src="../components/tailwind.config.js"></script>
 </head>
 <body class="bg-surface text-on-surface">
-<!-- TopNavBar -->
-<header class="bg-surface/80 backdrop-blur-md sticky top-0 z-[60] border-b border-outline-variant/30 docked full-width">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="font-display-lg text-headline-lg-mobile tracking-tight text-primary">WATERWAY</div>
-<nav class="hidden md:flex items-center gap-stack-md">
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="../index.html">Home</a>
-<a class="font-label-sm text-label-sm text-primary font-bold border-b-2 border-primary pb-1" href="about.html">About</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="takemission.html">Take Mission</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="createmission.html">Create Mission</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="certificate.html">Certification</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="account.html">Account</a>
-</nav>
-<div class="flex items-center gap-4">
-<div class="bg-surface-container px-3 py-1 rounded-full text-label-sm font-label-sm border border-outline-variant/30">
-<span class="text-secondary font-bold">EN</span> | <span class="text-on-surface-variant">VN</span>
-</div>
-</div>
-</div>
-</header>
-<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<!-- Hero Section -->
-<section class="py-stack-lg flex flex-col md:flex-row items-center gap-stack-lg">
-<div class="w-full md:w-1/2">
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest bg-primary/10 px-4 py-1 rounded-full mb-4 inline-block">Our Mission</span>
-<h1 class="font-display-lg text-display-lg text-primary mb-stack-md">Protecting Our Blue Planet.</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
-                    WATERWAY was born from the urgent need for transparency in water conservation. We bridge the gap between local communities and environmental data, empowering citizens to monitor, protect, and certify the health of our vital waterways. Our platform transforms data into collective action for a sustainable future.
-                </p>
-<div class="flex gap-4">
-<button class="bg-primary text-on-primary px-stack-md py-3 rounded-lg font-title-md hover:opacity-90 transition-all">Join Movement</button>
-<button class="border border-primary text-primary px-stack-md py-3 rounded-lg font-title-md hover:bg-primary/5 transition-all">Download Report</button>
-</div>
-</div>
-<div class="w-full md:w-1/2 relative">
-<div class="aspect-square rounded-2xl overflow-hidden border border-outline-variant/30">
-<img class="w-full h-full object-cover" data-alt="A serene, wide-angle cinematic shot of a pristine ocean shoreline at sunrise. The water is crystalline blue and transparent, gently lapping against white sand. The lighting is soft and high-key, creating an ethereal and professional atmosphere. The overall aesthetic is clean, modern, and trustworthy, reflecting the brand's commitment to water conservation and environmental transparency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMlHECa1zFSRMnzxGWobfZl2OiQnNswgLI5Q0-wFyif3g4LIZk3y_foaUlu-0Rp6XDyrHrxESLMDfJ61WKZJ4_oleI0L-b3ZCGIiwETZJDohPi1NnaY6hbr59eD2b1QZGLOZMJVKpKwpRb8Lfsl5iy-5eGlAF2PCXcHDb50Or2nU3cjDdliiS89CsquQvsabSViOC4tmhY2-DqzggN2XfgiIureR8sWFgXonINKDz4AjBcLCIBPGpZvl7mxNVPCrVUZSH_yZjrjrCZ"/>
-</div>
-<!-- Glassmorphism Floating Card -->
-<div class="absolute -bottom-6 -left-6 bg-surface/80 backdrop-blur-md border border-outline-variant/40 p-stack-md rounded-xl shadow-lg hidden md:block">
-<div class="flex items-center gap-4">
-<div class="p-3 bg-secondary-container rounded-full">
-<span class="material-symbols-outlined text-on-secondary-container" data-icon="waves">waves</span>
-</div>
-<div>
-<p class="text-label-sm font-label-sm text-on-surface-variant">Active Missions</p>
-<p class="text-headline-lg font-headline-lg text-primary">1,248+</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Founding Team Section -->
-<section class="py-stack-lg">
-<div class="text-center mb-stack-lg">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4">The Founding Team</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Experts in environmental science, data engineering, and community organizing committed to radical transparency.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-md">
-<!-- Team Card 1 -->
-<div class="group bg-surface-container-lowest border border-outline-variant/30 p-base rounded-xl transition-all hover:border-primary/30">
-<div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
-<img src="anh cat ba.jpg" alt="Ảnh cùng thư mục">
-</div>
-<div class="p-base">
-<h3 class="font-title-md text-title-md text-on-surface">Nguyen Thi Khanh Ly</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2">15 years of experience in hydrological modeling and marine biodiversity.</p>
-</div>
-</div>
-<!-- Team Card 2 -->
-<div class="group bg-surface-container-lowest border border-outline-variant/30 p-base rounded-xl transition-all hover:border-primary/50">
-<div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
-<img src="anh cat ba.jpg" alt="Ảnh cùng thư mục">
-</div>
-<div class="p-base">
-<h3 class="font-title-md text-title-md text-on-surface">Do Ha Lan</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2">15 years of experience in hydrological modeling and marine biodiversity.</p>
-</div>
-</div>
-<!-- Team Card 3 -->
-<div class="group bg-surface-container-lowest border border-outline-variant/30 p-base rounded-xl transition-all hover:border-primary/50">
-<div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
-<img src="anh cat ba.jpg" alt="Ảnh cùng thư mục">
-</div>
-<div class="p-base">
-<h3 class="font-title-md text-title-md text-on-surface">Vu Huu Giap</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2">Expert in decentralized data networks and real-time pollution tracking.</p>
-</div>
-</div>
-<!-- Team Card 4 -->
-<div class="group bg-surface-container-lowest border border-outline-variant/30 p-base rounded-xl transition-all hover:border-primary/50">
-<div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
-<img src="anh cat ba.jpg" alt="Ảnh cùng thư mục">
-</div>
-<div class="p-base">
-<h3 class="font-title-md text-title-md text-on-surface">Nguyen Hong Khanh Van</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2">Connecting global initiatives with local grassroots water conservation efforts.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Stats Bento Grid -->
-<section class="py-stack-lg">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
-<div class="md:col-span-2 bg-primary-container text-on-primary p-stack-md rounded-2xl flex flex-col justify-between min-h-[240px]">
-<span class="material-symbols-outlined text-4xl" data-icon="groups">groups</span>
-<div>
-<h4 class="font-display-lg text-display-lg">50k+</h4>
-<p class="font-body-lg text-body-lg opacity-80">Participating community members worldwide protecting local rivers.</p>
-</div>
-</div>
-<div class="bg-secondary-container text-on-secondary-container p-stack-md rounded-2xl flex flex-col justify-between">
-<span class="material-symbols-outlined text-4xl" data-icon="verified">verified</span>
-<div>
-<h4 class="font-headline-lg text-headline-lg">120</h4>
-<p class="font-label-sm text-label-sm">Certificates Awarded</p>
-</div>
-</div>
-<div class="bg-surface-container-high border border-outline-variant/30 p-stack-md rounded-2xl flex flex-col justify-between">
-<span class="material-symbols-outlined text-4xl text-primary" data-icon="location_on">location_on</span>
-<div>
-<h4 class="font-headline-lg text-headline-lg text-primary">34</h4>
-<p class="font-label-sm text-label-sm text-on-surface-variant">Active Countries</p>
-</div>
-</div>
-<div class="md:col-span-4 bg-surface-container-lowest border border-outline-variant/20 p-stack-md rounded-2xl">
-<div class="flex flex-col md:flex-row items-center gap-stack-md">
-<div class="w-full md:w-1/3">
-<h3 class="font-headline-lg text-headline-lg text-primary">Community Impact</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2">Real people, real data, real change. Our community is our greatest strength.</p>
-</div>
-<div class="w-full md:w-2/3 flex -space-x-4 overflow-hidden py-4">
-<img class="inline-block h-20 w-20 rounded-full ring-4 ring-surface object-cover" data-alt="Close-up of a diverse group of young environmental volunteers smiling and looking at a water sample. High-key lighting, modern professional photography, clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4mmSVvNV4BdUzFInbMqQHHa3-RTjmPvVXcXD2hrGlyHyakwqOGWmqz27JznCzyOOrnCwC3rQzgihIHHn_huSNfTEmGIRsu2YRbAfC2XnLeKKE2Bbp9G7fGBFt5-r2UmNbHsg4uyAPeUwKtexGNRfQBpapk1VrM7_yoJO7FOlm_Mz7N92ahSSZ1XJD7-FkSQqhSJGx5Wq3HaebRVAQxGkim2gg79hNSj2oK0Z3af9nJv7w5qrccWRhodqC-CR5QFV6Ue17a46IEXY-"/>
-<img class="inline-block h-20 w-20 rounded-full ring-4 ring-surface object-cover" data-alt="A diverse team of engineers discussing environmental data on a tablet. Modern office setting with lots of natural light, transparent glass elements, professional atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwmO5o9C16jYpGKPPWWan5ceUA2yE8BMjfAXKrILKJV37AEQ7bAFCZcTvzER1ueZIN3EMyNB5xdHLJtaX5AUHuBf_JA6LxEbzgxqqeUfAEHBAJlMZlaLKoWgGs1-YcCgsEvzIsA_BKtCl7eV0_oTthlz2msXpLCyQGJ9WblN12jMOXQcLJn1z-eEjYVVfAgEwm7ZzUJNSO33USRP1rLDaGBsL0Oh7InBQVG-QCwpqFHyLld85XQUrwjCNYcuGwzzGUtJ08gJxa6yJs"/>
-<img class="inline-block h-20 w-20 rounded-full ring-4 ring-surface object-cover" data-alt="A group of university students participating in a local water cleanup project. Bright daylight, energetic atmosphere, professional corporate photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPbojvhnHYjNiXAMnZWpulf6oh_5gUHt4u6VlhwwuU297dyldH6t8FKn7P_PqiViJC3g450YWTdanNXzrG1xOenmbneUPO_wteS7ipbdDsOKYXgjhp5f1PdM7fkWqU8VaK4cYBx1St2OXpaW43lsufIf2U1jQ5p3MBTNAHMAP70DcBv_090isXrm-jLqrMquwU9FAUtPaS-7De2tFTpmdxJodLhLdFdkZvxxuUyeeppcYaZw6Av7PCkKkxM02XnRuIY7wwdLTj9RW8"/>
-<img class="inline-block h-20 w-20 rounded-full ring-4 ring-surface object-cover" data-alt="Diverse group of scientists and community leaders standing together on a bridge overlooking a healthy river. Professional, trustworthy, and aspirational mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwkQ3CiNpVWpfVjALb-Ye2wgIQwuxdTg14E7nC_BHREZQNeoKPjQ9Vr8ATrUD9yfsMELnhoUldrI-YZMuSt_ll14yQX3xll57IYgyDKTbmmXH-tvRyZIlDwjz9K8_sBor02TC7qF5jQg3q4BHabQa-BiXL-K3piPcxZsTd-wPgoRB-u1AMwmN5LD04uA8WP-2-KBsb2Gxwyz6QYaNpgByInwrw8Yr0hDb_9tp8Vtqw1XhnjidP03NumBYQIVA8qzUU2LAUfPQcZvgw"/>
-<div class="inline-block h-20 w-20 rounded-full ring-4 ring-surface bg-surface-container flex items-center justify-center text-primary font-bold">+49k</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Partner Organizations Section -->
-<section class="py-stack-lg border-t border-outline-variant/30 mt-stack-lg">
-<div class="text-center mb-stack-md">
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Our Strategic Partners</p>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-6 gap-stack-lg items-center opacity-60 grayscale hover:grayscale-0 transition-all">
-<div class="flex justify-center h-12">
-<img alt="WWF Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6YrzK-4PnZ1njIaypqObJX-opeXH6lltdxUyeq9vWxiyrmtwycMTL51Kdr_Mp97ZPij21BofJG5n4TQVQR29o-PalgjUljMXiz3dB77jI9xeP_kDGl5Z9QuquZjblP4Q6cwRu77WIporLo_zgcR0WAiKXO0Q2YCvw9TKj5AT6PekJp6zy9XeOI3fAgOAWhHxvZjc0lHZNzMNVRenurRewWgfHnwr8IxAOd_KECR9-wGRmmMgzbodMRMesIBzeD8zBRJwVZdYA_YfW"/>
-</div>
-<div class="flex justify-center h-12">
-<img alt="Unicef Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvlBGE9i3DpE7njiTtEkU6Ylv4nF5Lzc_D6aCmmY2PmnFGCh5cW37XEr17YAfbDzk1Gd4DO9cltv1nru7FDXG7-Hjunvc2efTplre1pHD_UKSPkFTnOhvAyE0c8dTrAHTJV0npZiLX2eeb4IJ2kg-iMQSZ73PEcKv34kT_-omWAqRkYQnZAHuZ6wR0ullBeb4NG3MKXZpYbzNHUX111hScvQcU0ZxIFQzGaw6fonQXBdNceNIIvbK7BM83ABiDNcT1mSMEWTnHMYho"/>
-</div>
-<div class="flex justify-center h-12">
-<img alt="UNDP Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6_AghrIS7aJSBLAyYWblYwg-VH3cv1LB1Pg7j6ArWhksaqWDLBpeE71yKHyfsfotvLO-RwC2YWVTEcLitWTKziaLyxQumShSdh-z3UQCFLE9Syu9uuGasXeH2i6WsOqsfnjCBBMIl6KR4oiMxBQILcCzvdkBFsyNVhwfXzhSdbjwQL95ySiV5SIT7igI-n9TLQuYhvWjNhv8HBmbXCwKDC_rdNUUE-oDXjZHjDl-iyBb4n4L5GwHHOrZkVlnB2ebMnZx5bGmjKAPD"/>
-</div>
-<div class="flex justify-center h-12">
-<img alt="UNESCO Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPkTXB4w4BDEG1USMxIZpncKfYjJdzRE7cXWKuq288FW3dWeW6vo5PkwDKFOpeXiAHNR3TiEXE7fNhDTVjystFx9eyDM495fV84lpVp0xoVMF1RsAoMM4ZxhZTVGLLjctEYsv27TYye-xGs8ovD284N0cRJp3uxX66u45wYlm605kS-n-XBIISfolejVrtckHtnN2eVlh1xtAuz0PYFMGp7TAJodOENZt7FnOKKUW2AMyn1l73gQxmCDlEiadhcVVhdWWWdL8arDnL"/>
-</div>
-<div class="flex justify-center h-12">
-<img alt="Greenpeace Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEMheq056FWtF_iH3Eh3vF5a_eU5VER3TojXr1u-BIuuPSLamyTt-SnOKi7FOMW1_-wiejW9mOrpqXGY19PmhLDZZ2auzmFNTrrbqUokAz7TINpQmoJq4t3j9qEmwJc_TxN1lzHG797tuDyWjLjTLl7JzscP-3SGVScmrqNeFP-iuhRzmise3C5SaxnSMx9YfW67toJSGeZ1WMr3gRsYUti55ODfOE3B7JXKJvitsbNdBbplElMYvvsrl1SNlBsrmTJustuII_QwE9"/>
-</div>
-<div class="flex justify-center h-12">
-<img alt="Nature Conservancy Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8re1BEGXq57aFCcdmQXNlachTDgGs2D9s8VLz9X3g1WaR7FaFTT4UJ_7w-6spuk8KBO0yEYoHJUAH0L23wkVNpP6U4foNgTMaiGDjugqA52AGwuFdQZtJ5cJs3C0NKptiIYrTkT7UXfFDjIJ7sFoJc5ErDwOh9L1E__mMqvdvFsQNItFg7LSsFn3nQcXXsaTtu-IoQYnxOr1ugFMe5cEXqrU23JYQibnqyOd8hHdd3v408XugN4JP8-eF5cCHyUHEL-Tb8Tiogw4U"/>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant/30 w-full mt-stack-lg">
-<div class="w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base max-w-container-max mx-auto">
-<div class="flex flex-col gap-2">
-<div class="font-headline-lg text-headline-lg text-primary">WATERWAY</div>
-<p class="font-body-md text-body-md text-on-surface-variant">© 2024 WATERWAY. Protecting our blue planet.</p>
-</div>
-<div class="flex flex-wrap justify-center gap-stack-md">
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Partner Portal</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Support</a>
-</div>
-<div class="flex gap-4">
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined">public</span>
-</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined">mail</span>
-</a>
-</div>
-</div>
-</footer>
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe md:hidden bg-surface/90 backdrop-blur-lg border-t border-outline-variant/20 rounded-t-xl shadow-lg">
-<a class="flex flex-col items-center justify-center text-on-surface-variant" href="../index.html">
-<span class="material-symbols-outlined" data-icon="home">home</span>
-<span class="font-label-sm text-label-sm">Home</span>
-</a>
-<a class="flex flex-col items-center justify-center text-primary bg-secondary-container/20 rounded-xl px-3 py-1" href="about.html">
-<span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
-<span class="font-label-sm text-label-sm">About</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant" href="takemission.html">
-<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
-<span class="font-label-sm text-label-sm">Impact</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant" href="certificate.html">
-<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
-<span class="font-label-sm text-label-sm">Certs</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant" href="account.html">
-<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
-<span class="font-label-sm text-label-sm">Account</span>
-</a>
-</nav>
-</body></html>
+  <!-- TopNavBar -->
+  <header class="bg-surface/80 backdrop-blur-md sticky top-0 z-[60] border-b border-outline-variant/30 docked full-width">
+    <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+      <div class="font-display-lg text-headline-lg-mobile tracking-tight text-primary">WATERWAY</div>
+      <nav class="hidden md:flex items-center gap-stack-md">
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="../index.html">Home</a>
+        <a class="font-label-sm text-label-sm text-primary font-bold border-b-2 border-primary pb-1" href="about.html">About</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="takemission.html">Current Missions</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="createmission.html">Create Mission</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="certificate.html">Certification</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200" href="account.html">Account</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <div class="bg-surface-container px-3 py-1 rounded-full text-label-sm font-label-sm border border-outline-variant/30">
+          <span class="text-secondary font-bold">EN</span> | <span class="text-on-surface-variant">VN</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <!-- Hero Section -->
+    <section class="py-stack-lg flex flex-col md:flex-row items-center gap-stack-lg">
+      <div class="w-full md:w-1/2">
+        <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest bg-primary/10 px-4 py-1 rounded-full mb-4 inline-block">Our Mission</span>
+        <h1 class="font-display-lg text-display-lg text-primary mb-stack-md">Protecting Our Blue Planet.</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
+          WATERWAY was born from the urgent need for transparency in water conservation. We bridge the gap between local communities and environmental data, empowering citizens to monitor, protect, and certify the health of our vital waterways. Our platform transforms data into collective action for a sustainable future.
+        </p>
+        <div class="flex gap-4">
+          <form action="takemission.html" method="get">
+            <button class="bg-primary text-on-primary px-stack-md py-3 rounded-lg font-title-md hover:opacity-90 transition-all">Join Movement</button>
+          </form>
+          <button class="border border-primary text-primary px-stack-md py-3 rounded-lg font-title-md hover:bg-primary/5 transition-all">Download Report</button>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 relative">
+        <div class="aspect-square rounded-2xl overflow-hidden border border-outline-variant/30">
+          <img class="w-full h-full object-cover" data-alt="A serene, wide-angle cinematic shot of a pristine ocean shoreline at sunrise. The water is crystalline blue and transparent, gently lapping against white sand. The lighting is soft and high-key, creating an ethereal and professional atmosphere. The overall aesthetic is clean, modern, and trustworthy, reflecting the brand's commitment to water conservation and environmental transparency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMlHECa1zFSRMnzxGWobfZl2OiQnNswgLI5Q0-wFyif3g4LIZk3y_foaUlu-0Rp6XDyrHrxESLMDfJ61WKZJ4_oleI0L-b3ZCGIiwETZJDohPi1NnaY6hbr59eD2b1QZGLOZMJVKpKwpRb8Lfsl5iy-5eGlAF2PCXcHDb50Or2nU3cjDdliiS89CsquQvsabSViOC4tmhY2-DqzggN2XfgiIureR8sWFgXonINKDz4AjBcLCIBPGpZvl7mxNVPCrVUZSH_yZjrjrCZ"/>
+        </div>
+        <!-- Glassmorphism Floating Card -->
+        <div class="absolute -bottom-6 -left-6 bg-surface/80 backdrop-blur-md border border-outline-variant/40 p-stack-md rounded-xl shadow-lg hidden md:block">
+          <div class="flex items-center gap-4">
+            <div class="p-3 bg-secondary-container rounded-full">
+              <span class="material-symbols-outlined text-on-secondary-container" data-icon="waves">waves</span>
+            </div>
+            <div>
+              <p class="text-label-sm font-label-sm text-on-surface-variant">Active Missions</p>
+              <p class="text-headline-lg font-headline-lg text-primary">1,248+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Founding Team Section -->
+    <section class="py-stack-lg">
+      <div class="text-center mb-stack-lg">
+        <h2 class="font-headline-lg text-headline-lg text-primary mb-4">The Founding Team</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Experts in environmental science, data engineering, and community organizing committed to radical transparency.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-md">
+        <!-- Team Card 1 -->
+        <div class="group bg-surface-container-lowest border border-outline-variant/30 p-base rounded-xl transition-all hover:border-primary/30">
+          <div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
+            <img src="anh cat ba.jpg" alt="Ảnh cùng thư mục">
+            </div>
+            <div class="p-base">
+              <h3 class="font-title-md text-title-md text-on-surface">Nguyen Thi Khanh Ly</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-2">15 years of experience in hydrological modeling and marine biodiversity.</p>
+            </div>
+          </div>
+          <!-- Team Card 2 -->
+          <div class="group bg-surface-container-lowest border border-outline-variant/30 p-base rounded-xl transition-all hover:border-primary/50">
+            <div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
+              <img src="anh cat ba.jpg" alt="Ảnh cùng thư mục">
+              </div>
+              <div class="p-base">
+                <h3 class="font-title-md text-title-md text-on-surface">Do Ha Lan</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-2">15 years of experience in hydrological modeling and marine biodiversity.</p>
+              </div>
+            </div>
+            <!-- Team Card 3 -->
+            <div class="group bg-surface-container-lowest border border-outline-variant/30 p-base rounded-xl transition-all hover:border-primary/50">
+              <div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
+                <img src="anh cat ba.jpg" alt="Ảnh cùng thư mục">
+                </div>
+                <div class="p-base">
+                  <h3 class="font-title-md text-title-md text-on-surface">Vu Huu Giap</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant mt-2">Expert in decentralized data networks and real-time pollution tracking.</p>
+                </div>
+              </div>
+              <!-- Team Card 4 -->
+              <div class="group bg-surface-container-lowest border border-outline-variant/30 p-base rounded-xl transition-all hover:border-primary/50">
+                <div class="aspect-[4/5] overflow-hidden rounded-lg mb-4">
+                  <img src="anh cat ba.jpg" alt="Ảnh cùng thư mục">
+                  </div>
+                  <div class="p-base">
+                    <h3 class="font-title-md text-title-md text-on-surface">Nguyen Hong Khanh Van</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-2">Connecting global initiatives with local grassroots water conservation efforts.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Stats Bento Grid -->
+            <section class="py-stack-lg">
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+                <div class="md:col-span-2 bg-primary-container text-on-primary p-stack-md rounded-2xl flex flex-col justify-between min-h-[240px]">
+                  <span class="material-symbols-outlined text-4xl" data-icon="groups">groups</span>
+                  <div>
+                    <h4 class="font-display-lg text-display-lg">50k+</h4>
+                    <p class="font-body-lg text-body-lg opacity-80">Participating community members worldwide protecting local rivers.</p>
+                  </div>
+                </div>
+                <div class="bg-secondary-container text-on-secondary-container p-stack-md rounded-2xl flex flex-col justify-between">
+                  <span class="material-symbols-outlined text-4xl" data-icon="verified">verified</span>
+                  <div>
+                    <h4 class="font-headline-lg text-headline-lg">120</h4>
+                    <p class="font-label-sm text-label-sm">Certificates Awarded</p>
+                  </div>
+                </div>
+                <div class="bg-surface-container-high border border-outline-variant/30 p-stack-md rounded-2xl flex flex-col justify-between">
+                  <span class="material-symbols-outlined text-4xl text-primary" data-icon="location_on">location_on</span>
+                  <div>
+                    <h4 class="font-headline-lg text-headline-lg text-primary">34</h4>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant">Active Countries</p>
+                  </div>
+                </div>
+                <div class="md:col-span-4 bg-surface-container-lowest border border-outline-variant/20 p-stack-md rounded-2xl">
+                  <div class="flex flex-col md:flex-row items-center gap-stack-md">
+                    <div class="w-full md:w-1/3">
+                      <h3 class="font-headline-lg text-headline-lg text-primary">Community Impact</h3>
+                      <p class="font-body-md text-body-md text-on-surface-variant mt-2">Real people, real data, real change. Our community is our greatest strength.</p>
+                    </div>
+                    <div class="w-full md:w-2/3 flex -space-x-4 overflow-hidden py-4">
+                      <img class="inline-block h-20 w-20 rounded-full ring-4 ring-surface object-cover" data-alt="Close-up of a diverse group of young environmental volunteers smiling and looking at a water sample. High-key lighting, modern professional photography, clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4mmSVvNV4BdUzFInbMqQHHa3-RTjmPvVXcXD2hrGlyHyakwqOGWmqz27JznCzyOOrnCwC3rQzgihIHHn_huSNfTEmGIRsu2YRbAfC2XnLeKKE2Bbp9G7fGBFt5-r2UmNbHsg4uyAPeUwKtexGNRfQBpapk1VrM7_yoJO7FOlm_Mz7N92ahSSZ1XJD7-FkSQqhSJGx5Wq3HaebRVAQxGkim2gg79hNSj2oK0Z3af9nJv7w5qrccWRhodqC-CR5QFV6Ue17a46IEXY-"/>
+                      <img class="inline-block h-20 w-20 rounded-full ring-4 ring-surface object-cover" data-alt="A diverse team of engineers discussing environmental data on a tablet. Modern office setting with lots of natural light, transparent glass elements, professional atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwmO5o9C16jYpGKPPWWan5ceUA2yE8BMjfAXKrILKJV37AEQ7bAFCZcTvzER1ueZIN3EMyNB5xdHLJtaX5AUHuBf_JA6LxEbzgxqqeUfAEHBAJlMZlaLKoWgGs1-YcCgsEvzIsA_BKtCl7eV0_oTthlz2msXpLCyQGJ9WblN12jMOXQcLJn1z-eEjYVVfAgEwm7ZzUJNSO33USRP1rLDaGBsL0Oh7InBQVG-QCwpqFHyLld85XQUrwjCNYcuGwzzGUtJ08gJxa6yJs"/>
+                      <img class="inline-block h-20 w-20 rounded-full ring-4 ring-surface object-cover" data-alt="A group of university students participating in a local water cleanup project. Bright daylight, energetic atmosphere, professional corporate photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPbojvhnHYjNiXAMnZWpulf6oh_5gUHt4u6VlhwwuU297dyldH6t8FKn7P_PqiViJC3g450YWTdanNXzrG1xOenmbneUPO_wteS7ipbdDsOKYXgjhp5f1PdM7fkWqU8VaK4cYBx1St2OXpaW43lsufIf2U1jQ5p3MBTNAHMAP70DcBv_090isXrm-jLqrMquwU9FAUtPaS-7De2tFTpmdxJodLhLdFdkZvxxuUyeeppcYaZw6Av7PCkKkxM02XnRuIY7wwdLTj9RW8"/>
+                      <img class="inline-block h-20 w-20 rounded-full ring-4 ring-surface object-cover" data-alt="Diverse group of scientists and community leaders standing together on a bridge overlooking a healthy river. Professional, trustworthy, and aspirational mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwkQ3CiNpVWpfVjALb-Ye2wgIQwuxdTg14E7nC_BHREZQNeoKPjQ9Vr8ATrUD9yfsMELnhoUldrI-YZMuSt_ll14yQX3xll57IYgyDKTbmmXH-tvRyZIlDwjz9K8_sBor02TC7qF5jQg3q4BHabQa-BiXL-K3piPcxZsTd-wPgoRB-u1AMwmN5LD04uA8WP-2-KBsb2Gxwyz6QYaNpgByInwrw8Yr0hDb_9tp8Vtqw1XhnjidP03NumBYQIVA8qzUU2LAUfPQcZvgw"/>
+                      <div class="inline-block h-20 w-20 rounded-full ring-4 ring-surface bg-surface-container flex items-center justify-center text-primary font-bold">+49k</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Partner Organizations Section -->
+            <section class="py-stack-lg border-t border-outline-variant/30 mt-stack-lg">
+              <div class="text-center mb-stack-md">
+                <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Our Strategic Partners</p>
+              </div>
+              <div class="grid grid-cols-2 md:grid-cols-6 gap-stack-lg items-center opacity-60 grayscale hover:grayscale-0 transition-all">
+                <div class="flex justify-center h-12">
+                  <img alt="WWF Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6YrzK-4PnZ1njIaypqObJX-opeXH6lltdxUyeq9vWxiyrmtwycMTL51Kdr_Mp97ZPij21BofJG5n4TQVQR29o-PalgjUljMXiz3dB77jI9xeP_kDGl5Z9QuquZjblP4Q6cwRu77WIporLo_zgcR0WAiKXO0Q2YCvw9TKj5AT6PekJp6zy9XeOI3fAgOAWhHxvZjc0lHZNzMNVRenurRewWgfHnwr8IxAOd_KECR9-wGRmmMgzbodMRMesIBzeD8zBRJwVZdYA_YfW"/>
+                </div>
+                <div class="flex justify-center h-12">
+                  <img alt="Unicef Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvlBGE9i3DpE7njiTtEkU6Ylv4nF5Lzc_D6aCmmY2PmnFGCh5cW37XEr17YAfbDzk1Gd4DO9cltv1nru7FDXG7-Hjunvc2efTplre1pHD_UKSPkFTnOhvAyE0c8dTrAHTJV0npZiLX2eeb4IJ2kg-iMQSZ73PEcKv34kT_-omWAqRkYQnZAHuZ6wR0ullBeb4NG3MKXZpYbzNHUX111hScvQcU0ZxIFQzGaw6fonQXBdNceNIIvbK7BM83ABiDNcT1mSMEWTnHMYho"/>
+                </div>
+                <div class="flex justify-center h-12">
+                  <img alt="UNDP Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6_AghrIS7aJSBLAyYWblYwg-VH3cv1LB1Pg7j6ArWhksaqWDLBpeE71yKHyfsfotvLO-RwC2YWVTEcLitWTKziaLyxQumShSdh-z3UQCFLE9Syu9uuGasXeH2i6WsOqsfnjCBBMIl6KR4oiMxBQILcCzvdkBFsyNVhwfXzhSdbjwQL95ySiV5SIT7igI-n9TLQuYhvWjNhv8HBmbXCwKDC_rdNUUE-oDXjZHjDl-iyBb4n4L5GwHHOrZkVlnB2ebMnZx5bGmjKAPD"/>
+                </div>
+                <div class="flex justify-center h-12">
+                  <img alt="UNESCO Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPkTXB4w4BDEG1USMxIZpncKfYjJdzRE7cXWKuq288FW3dWeW6vo5PkwDKFOpeXiAHNR3TiEXE7fNhDTVjystFx9eyDM495fV84lpVp0xoVMF1RsAoMM4ZxhZTVGLLjctEYsv27TYye-xGs8ovD284N0cRJp3uxX66u45wYlm605kS-n-XBIISfolejVrtckHtnN2eVlh1xtAuz0PYFMGp7TAJodOENZt7FnOKKUW2AMyn1l73gQxmCDlEiadhcVVhdWWWdL8arDnL"/>
+                </div>
+                <div class="flex justify-center h-12">
+                  <img alt="Greenpeace Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEMheq056FWtF_iH3Eh3vF5a_eU5VER3TojXr1u-BIuuPSLamyTt-SnOKi7FOMW1_-wiejW9mOrpqXGY19PmhLDZZ2auzmFNTrrbqUokAz7TINpQmoJq4t3j9qEmwJc_TxN1lzHG797tuDyWjLjTLl7JzscP-3SGVScmrqNeFP-iuhRzmise3C5SaxnSMx9YfW67toJSGeZ1WMr3gRsYUti55ODfOE3B7JXKJvitsbNdBbplElMYvvsrl1SNlBsrmTJustuII_QwE9"/>
+                </div>
+                <div class="flex justify-center h-12">
+                  <img alt="Nature Conservancy Logo" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8re1BEGXq57aFCcdmQXNlachTDgGs2D9s8VLz9X3g1WaR7FaFTT4UJ_7w-6spuk8KBO0yEYoHJUAH0L23wkVNpP6U4foNgTMaiGDjugqA52AGwuFdQZtJ5cJs3C0NKptiIYrTkT7UXfFDjIJ7sFoJc5ErDwOh9L1E__mMqvdvFsQNItFg7LSsFn3nQcXXsaTtu-IoQYnxOr1ugFMe5cEXqrU23JYQibnqyOd8hHdd3v408XugN4JP8-eF5cCHyUHEL-Tb8Tiogw4U"/>
+                </div>
+              </div>
+            </section>
+          </main>
+          <!-- Footer -->
+          <footer class="bg-surface-container-lowest border-t border-outline-variant/30 w-full mt-stack-lg">
+            <div class="w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base max-w-container-max mx-auto">
+              <div class="flex flex-col gap-2">
+                <div class="font-headline-lg text-headline-lg text-primary">WATERWAY</div>
+                <p class="font-body-md text-body-md text-on-surface-variant">© 2024 WATERWAY. Protecting our blue planet.</p>
+              </div>
+              <div class="flex flex-wrap justify-center gap-stack-md">
+                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Partner Portal</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Support</a>
+              </div>
+              <div class="flex gap-4">
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+                  <span class="material-symbols-outlined">public</span>
+                </a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+                  <span class="material-symbols-outlined">mail</span>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!-- BottomNavBar (Mobile Only) -->
+          <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe md:hidden bg-surface/90 backdrop-blur-lg border-t border-outline-variant/20 rounded-t-xl shadow-lg">
+            <a class="flex flex-col items-center justify-center text-on-surface-variant" href="../index.html">
+              <span class="material-symbols-outlined" data-icon="home">home</span>
+              <span class="font-label-sm text-label-sm">Home</span>
+            </a>
+            <a class="flex flex-col items-center justify-center text-primary bg-secondary-container/20 rounded-xl px-3 py-1" href="about.html">
+              <span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+              <span class="font-label-sm text-label-sm">About</span>
+            </a>
+            <a class="flex flex-col items-center justify-center text-on-surface-variant" href="takemission.html">
+              <span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+              <span class="font-label-sm text-label-sm">Impact</span>
+            </a>
+            <a class="flex flex-col items-center justify-center text-on-surface-variant" href="certificate.html">
+              <span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+              <span class="font-label-sm text-label-sm">Certs</span>
+            </a>
+            <a class="flex flex-col items-center justify-center text-on-surface-variant" href="account.html">
+              <span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+              <span class="font-label-sm text-label-sm">Account</span>
+            </a>
+          </nav>
+        </body></html>

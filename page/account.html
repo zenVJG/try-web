@@ -8,275 +8,275 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <style>
-        @font-face {
-            font-family: 'metropolis';
-            src: url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap');
-        }
-        @font-face {
-            font-family: 'inter';
-            src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-        }
-        @font-face {
-            font-family: 'jetbrainsMono';
-            src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(8px);
-            border: 1px solid #E5E7EB;
-        }
+  @font-face {
+  font-family: 'metropolis';
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap');
+  }
+  @font-face {
+  font-family: 'inter';
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+  }
+  @font-face {
+  font-family: 'jetbrainsMono';
+  src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+  }
+  .material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  }
+  .glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid #E5E7EB;
+  }
 </style>
 <script src="../components/tailwind.config.js"></script>
 </head>
 <body class="bg-surface text-on-surface font-body-md min-h-screen">
-<!-- TopNavBar -->
-<header class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 sticky top-0 z-50">
-<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="font-display-lg text-headline-lg-mobile tracking-tight text-primary dark:text-primary-fixed">WATERWAY</div>
-<div class="hidden md:flex items-center gap-stack-md">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="../index.html">Home</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="about.html">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="takemission.html">Take Mission</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="createmission.html">Create Mission</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="certificate.html">Certification</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-sm text-label-sm" href="account.html">Account</a>
-</div>
-<div class="flex items-center gap-base">
-<button class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-sm text-label-sm">
-                    EN | <span class="opacity-50">VN</span>
-</button>
-</div>
-</nav>
-</header>
+  <!-- TopNavBar -->
+  <header class="bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 sticky top-0 z-50">
+    <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+      <div class="font-display-lg text-headline-lg-mobile tracking-tight text-primary dark:text-primary-fixed">WATERWAY</div>
+      <div class="hidden md:flex items-center gap-stack-md">
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="../index.html">Home</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="about.html">About</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="takemission.html">Current Missions</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="createmission.html">Create Mission</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="certificate.html">Certification</a>
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-sm text-label-sm" href="account.html">Account</a>
+      </div>
+      <div class="flex items-center gap-base">
+        <button class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-sm text-label-sm">
+          EN | <span class="opacity-50">VN</span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-<!-- IMPORTANT: Content kept as-is from your current account.html except BottomNavBar mobile links -->
-<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
-<!-- Profile Header Section -->
-<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start mb-stack-lg">
-<div class="md:col-span-8 flex flex-col md:flex-row items-center md:items-end gap-stack-md">
-<div class="relative group">
-<div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
-<img alt="User Profile" class="w-full h-full object-cover" data-alt="A professional headshot of a young environmental scientist smiling confidently. The lighting is natural and bright, suggesting a high-end light-mode UI style. The background is a soft-focus coastal landscape with deep ocean blue and sky blue tones, perfectly aligning with the professional and clean Waterway brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrYsCMFca1Z3koXKg_xNcU2kZ8Uc8gqUu9Z3nLhiKH2FHK_iD5nunkQJ8dm74LcwZGWlpotGxbjwz5Le5hYlhh27I5hjzte731fQY25u7YiTusmpz9LTPS5DqDo19LHElDhXPToAUnNtqUr5-f9uHOELdxLrT7tE3VFQiiGKaeD7MsICG73p_X9MQdufXL90RQzQYM20jTC_PtYxIkUXDBlfw8W8GWo3el3OiZxbij7LXEbO-pjlRnzVhuK2Hcg4wEObETVSBhTGTo"/>
-</div>
-<button class="absolute bottom-1 right-1 bg-primary text-white rounded-full p-2 shadow-md">
-<span class="material-symbols-outlined text-[18px]">edit</span>
-</button>
-</div>
-<div class="text-center md:text-left">
-<h1 class="font-headline-lg text-headline-lg text-primary">Minh Nguyễn</h1>
-<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">ID: WW-8291-7742</p>
-<p class="font-label-sm text-label-sm text-outline mt-2 italic">One account per email verification active.</p>
-</div>
-</div>
-<!-- Stats Dashboard Card -->
-<div class="md:col-span-4 w-full">
-<div class="glass-card p-6 rounded-xl flex flex-col items-center justify-center border-primary/20">
-<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Accumulated Impact Points</span>
-<div class="flex items-baseline gap-2 mt-2">
-<span class="font-display-lg text-display-lg text-secondary">4,850</span>
-<span class="material-symbols-outlined text-secondary text-headline-lg" data-weight="fill">water_drop</span>
-</div>
-<div class="w-full bg-surface-container-highest h-2 rounded-full mt-4 overflow-hidden">
-<div class="bg-secondary h-full w-3/4"></div>
-</div>
-<p class="font-label-sm text-label-sm text-on-surface-variant mt-2 text-center">1,150 pts until Senior Guardian status</p>
-</div>
-</div>
-</section>
+  <!-- IMPORTANT: Content kept as-is from your current account.html except BottomNavBar mobile links -->
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+    <!-- Profile Header Section -->
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start mb-stack-lg">
+      <div class="md:col-span-8 flex flex-col md:flex-row items-center md:items-end gap-stack-md">
+        <div class="relative group">
+          <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+            <img alt="User Profile" class="w-full h-full object-cover" data-alt="A professional headshot of a young environmental scientist smiling confidently. The lighting is natural and bright, suggesting a high-end light-mode UI style. The background is a soft-focus coastal landscape with deep ocean blue and sky blue tones, perfectly aligning with the professional and clean Waterway brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrYsCMFca1Z3koXKg_xNcU2kZ8Uc8gqUu9Z3nLhiKH2FHK_iD5nunkQJ8dm74LcwZGWlpotGxbjwz5Le5hYlhh27I5hjzte731fQY25u7YiTusmpz9LTPS5DqDo19LHElDhXPToAUnNtqUr5-f9uHOELdxLrT7tE3VFQiiGKaeD7MsICG73p_X9MQdufXL90RQzQYM20jTC_PtYxIkUXDBlfw8W8GWo3el3OiZxbij7LXEbO-pjlRnzVhuK2Hcg4wEObETVSBhTGTo"/>
+          </div>
+          <button class="absolute bottom-1 right-1 bg-primary text-white rounded-full p-2 shadow-md">
+            <span class="material-symbols-outlined text-[18px]">edit</span>
+          </button>
+        </div>
+        <div class="text-center md:text-left">
+          <h1 class="font-headline-lg text-headline-lg text-primary">Minh Nguyễn</h1>
+          <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">ID: WW-8291-7742</p>
+          <p class="font-label-sm text-label-sm text-outline mt-2 italic">One account per email verification active.</p>
+        </div>
+      </div>
+      <!-- Stats Dashboard Card -->
+      <div class="md:col-span-4 w-full">
+        <div class="glass-card p-6 rounded-xl flex flex-col items-center justify-center border-primary/20">
+          <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Accumulated Impact Points</span>
+          <div class="flex items-baseline gap-2 mt-2">
+            <span class="font-display-lg text-display-lg text-secondary">4,850</span>
+            <span class="material-symbols-outlined text-secondary text-headline-lg" data-weight="fill">water_drop</span>
+          </div>
+          <div class="w-full bg-surface-container-highest h-2 rounded-full mt-4 overflow-hidden">
+            <div class="bg-secondary h-full w-3/4"></div>
+          </div>
+          <p class="font-label-sm text-label-sm text-on-surface-variant mt-2 text-center">1,150 pts until Senior Guardian status</p>
+        </div>
+      </div>
+    </section>
 
-<!-- Tabbed Section Content -->
-<div class="mt-stack-lg">
-<div class="flex border-b border-outline-variant/30 gap-stack-md mb-stack-md overflow-x-auto whitespace-nowrap">
-<button class="pb-4 border-b-2 border-primary text-primary font-bold font-title-md text-title-md">Mission History</button>
-<button class="pb-4 border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-colors font-title-md text-title-md">Point History</button>
-<button class="pb-4 border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-colors font-title-md text-title-md">My Certificates</button>
-</div>
+    <!-- Tabbed Section Content -->
+    <div class="mt-stack-lg">
+      <div class="flex border-b border-outline-variant/30 gap-stack-md mb-stack-md overflow-x-auto whitespace-nowrap">
+        <button class="pb-4 border-b-2 border-primary text-primary font-bold font-title-md text-title-md">Mission History</button>
+        <button class="pb-4 border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-colors font-title-md text-title-md">Point History</button>
+        <button class="pb-4 border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-colors font-title-md text-title-md">My Certificates</button>
+      </div>
 
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<!-- Mission History List -->
-<div class="md:col-span-8 flex flex-col gap-stack-sm">
-<div class="glass-card p-4 rounded-xl flex items-center justify-between hover:border-primary/40 transition-all">
-<div class="flex items-center gap-stack-sm">
-<div class="bg-primary/10 p-3 rounded-lg">
-<span class="material-symbols-outlined text-primary">biotech</span>
-</div>
-<div>
-<h3 class="font-title-md text-body-lg text-on-surface font-semibold">Water Quality Testing - Red River</h3>
-<p class="text-on-surface-variant text-label-sm">May 14, 2024 • Site A-14</p>
-</div>
-</div>
-<div class="text-right">
-<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-label-sm">Verified</span>
-</div>
-</div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <!-- Mission History List -->
+        <div class="md:col-span-8 flex flex-col gap-stack-sm">
+          <div class="glass-card p-4 rounded-xl flex items-center justify-between hover:border-primary/40 transition-all">
+            <div class="flex items-center gap-stack-sm">
+              <div class="bg-primary/10 p-3 rounded-lg">
+                <span class="material-symbols-outlined text-primary">biotech</span>
+              </div>
+              <div>
+                <h3 class="font-title-md text-body-lg text-on-surface font-semibold">Water Quality Testing - Red River</h3>
+                <p class="text-on-surface-variant text-label-sm">May 14, 2024 • Site A-14</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-label-sm">Verified</span>
+            </div>
+          </div>
 
-<div class="glass-card p-4 rounded-xl flex items-center justify-between hover:border-primary/40 transition-all">
-<div class="flex items-center gap-stack-sm">
-<div class="bg-primary/10 p-3 rounded-lg">
-<span class="material-symbols-outlined text-primary">cleaning_services</span>
-</div>
-<div>
-<h3 class="font-title-md text-body-lg text-on-surface font-semibold">Community Canal Cleanup</h3>
-<p class="text-on-surface-variant text-label-sm">April 28, 2024 • District 2</p>
-</div>
-</div>
-<div class="text-right">
-<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-label-sm">Verified</span>
-</div>
-</div>
+          <div class="glass-card p-4 rounded-xl flex items-center justify-between hover:border-primary/40 transition-all">
+            <div class="flex items-center gap-stack-sm">
+              <div class="bg-primary/10 p-3 rounded-lg">
+                <span class="material-symbols-outlined text-primary">cleaning_services</span>
+              </div>
+              <div>
+                <h3 class="font-title-md text-body-lg text-on-surface font-semibold">Community Canal Cleanup</h3>
+                <p class="text-on-surface-variant text-label-sm">April 28, 2024 • District 2</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-label-sm">Verified</span>
+            </div>
+          </div>
 
-<div class="glass-card p-4 rounded-xl flex items-center justify-between hover:border-primary/40 transition-all opacity-70">
-<div class="flex items-center gap-stack-sm">
-<div class="bg-surface-container-highest p-3 rounded-lg">
-<span class="material-symbols-outlined text-outline">query_stats</span>
-</div>
-<div>
-<h3 class="font-title-md text-body-lg text-on-surface font-semibold">Sensor Installation Mission</h3>
-<p class="text-on-surface-variant text-label-sm">April 12, 2024 • Dong Nai River</p>
-</div>
-</div>
-<div class="text-right">
-<span class="bg-surface-container-highest text-outline px-3 py-1 rounded-full text-label-sm font-label-sm">Reviewing</span>
-</div>
-</div>
+          <div class="glass-card p-4 rounded-xl flex items-center justify-between hover:border-primary/40 transition-all opacity-70">
+            <div class="flex items-center gap-stack-sm">
+              <div class="bg-surface-container-highest p-3 rounded-lg">
+                <span class="material-symbols-outlined text-outline">query_stats</span>
+              </div>
+              <div>
+                <h3 class="font-title-md text-body-lg text-on-surface font-semibold">Sensor Installation Mission</h3>
+                <p class="text-on-surface-variant text-label-sm">April 12, 2024 • Dong Nai River</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="bg-surface-container-highest text-outline px-3 py-1 rounded-full text-label-sm font-label-sm">Reviewing</span>
+            </div>
+          </div>
 
-<button class="w-full py-4 border-2 border-dashed border-outline-variant/50 rounded-xl text-outline hover:text-primary hover:border-primary/50 transition-all font-label-sm">
-                        View All Missions
-</button>
-</div>
+          <button class="w-full py-4 border-2 border-dashed border-outline-variant/50 rounded-xl text-outline hover:text-primary hover:border-primary/50 transition-all font-label-sm">
+            View All Missions
+          </button>
+        </div>
 
-<!-- Sidebar widgets -->
-<div class="md:col-span-4 flex flex-col gap-gutter">
-<div class="glass-card p-6 rounded-xl">
-<h4 class="font-title-md text-title-md text-primary mb-4">Recent Rewards</h4>
-<ul class="space-y-4">
-<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
-<span class="text-on-surface-variant text-body-md">Data Verification Bonus</span>
-<span class="font-label-sm text-secondary">+250 pts</span>
-</li>
-<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
-<span class="text-on-surface-variant text-body-md">Mission: Canal Cleanup</span>
-<span class="font-label-sm text-secondary">+500 pts</span>
-</li>
-<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
-<span class="text-on-surface-variant text-body-md">Daily Guardian Login</span>
-<span class="font-label-sm text-secondary">+10 pts</span>
-</li>
-</ul>
-</div>
+        <!-- Sidebar widgets -->
+        <div class="md:col-span-4 flex flex-col gap-gutter">
+          <div class="glass-card p-6 rounded-xl">
+            <h4 class="font-title-md text-title-md text-primary mb-4">Recent Rewards</h4>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+                <span class="text-on-surface-variant text-body-md">Data Verification Bonus</span>
+                <span class="font-label-sm text-secondary">+250 pts</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+                <span class="text-on-surface-variant text-body-md">Mission: Canal Cleanup</span>
+                <span class="font-label-sm text-secondary">+500 pts</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+                <span class="text-on-surface-variant text-body-md">Daily Guardian Login</span>
+                <span class="font-label-sm text-secondary">+10 pts</span>
+              </li>
+            </ul>
+          </div>
 
-<div class="bg-primary p-6 rounded-xl text-on-primary">
-<span class="material-symbols-outlined text-4xl opacity-50 mb-4" data-weight="fill">verified_user</span>
-<h4 class="font-title-md text-title-md mb-2">Master Guardian Cert</h4>
-<p class="text-on-primary/80 text-label-sm mb-6">Earned after 10 successful water quality missions.</p>
-<button class="w-full bg-white text-primary py-3 rounded-lg font-bold hover:bg-secondary-container transition-colors">
-                            Download PDF
-</button>
-</div>
-</div>
-</div>
-</div>
+          <div class="bg-primary p-6 rounded-xl text-on-primary">
+            <span class="material-symbols-outlined text-4xl opacity-50 mb-4" data-weight="fill">verified_user</span>
+            <h4 class="font-title-md text-title-md mb-2">Master Guardian Cert</h4>
+            <p class="text-on-primary/80 text-label-sm mb-6">Earned after 10 successful water quality missions.</p>
+            <button class="w-full bg-white text-primary py-3 rounded-lg font-bold hover:bg-secondary-container transition-colors">
+              Download PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<section class="mt-stack-lg">
-<div class="flex items-center justify-between mb-stack-md">
-<h2 class="font-headline-lg text-headline-lg text-primary">Earned Credentials</h2>
-<a class="text-primary font-label-sm flex items-center gap-1" href="#">
-                    Certification Roadmap <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Certificate Card -->
-<div class="border-2 border-outline-variant/30 p-1 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow">
-<div class="aspect-[4/3] bg-surface-container overflow-hidden rounded-lg relative">
-<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10"></div>
-<div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-<span class="font-label-sm text-[10px] text-primary/60 uppercase tracking-[0.2em] mb-2">Waterway Official Certification</span>
-<h5 class="font-display-lg text-title-md text-primary leading-tight">Advanced Field Technician</h5>
-<div class="mt-4 border-t border-primary/20 pt-4 w-3/4 mx-auto">
-<p class="font-label-sm text-[8px] text-outline">Verified by the Global Water Quality Alliance</p>
-</div>
-</div>
-</div>
-<div class="p-4 flex justify-between items-center">
-<div>
-<p class="font-body-md font-semibold text-on-surface">Minh Nguyễn</p>
-<p class="text-label-sm text-outline">April 2024</p>
-</div>
-<span class="material-symbols-outlined text-secondary" data-weight="fill">verified</span>
-</div>
-</div>
+    <section class="mt-stack-lg">
+      <div class="flex items-center justify-between mb-stack-md">
+        <h2 class="font-headline-lg text-headline-lg text-primary">Earned Credentials</h2>
+        <a class="text-primary font-label-sm flex items-center gap-1" href="#">
+          Certification Roadmap <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+        <!-- Certificate Card -->
+        <div class="border-2 border-outline-variant/30 p-1 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow">
+          <div class="aspect-[4/3] bg-surface-container overflow-hidden rounded-lg relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+              <span class="font-label-sm text-[10px] text-primary/60 uppercase tracking-[0.2em] mb-2">Waterway Official Certification</span>
+              <h5 class="font-display-lg text-title-md text-primary leading-tight">Advanced Field Technician</h5>
+              <div class="mt-4 border-t border-primary/20 pt-4 w-3/4 mx-auto">
+                <p class="font-label-sm text-[8px] text-outline">Verified by the Global Water Quality Alliance</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 flex justify-between items-center">
+            <div>
+              <p class="font-body-md font-semibold text-on-surface">Minh Nguyễn</p>
+              <p class="text-label-sm text-outline">April 2024</p>
+            </div>
+            <span class="material-symbols-outlined text-secondary" data-weight="fill">verified</span>
+          </div>
+        </div>
 
-<!-- Certificate Card 2 -->
-<div class="border-2 border-outline-variant/30 p-1 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow">
-<div class="aspect-[4/3] bg-surface-container overflow-hidden rounded-lg relative">
-<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10"></div>
-<div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-<span class="font-label-sm text-[10px] text-primary/60 uppercase tracking-[0.2em] mb-2">Waterway Official Certification</span>
-<h5 class="font-display-lg text-title-md text-primary leading-tight">Community Leader</h5>
-<div class="mt-4 border-t border-primary/20 pt-4 w-3/4 mx-auto">
-<p class="font-label-sm text-[8px] text-outline">Certified Social Impact Leader</p>
-</div>
-</div>
-</div>
-<div class="p-4 flex justify-between items-center">
-<div>
-<p class="font-body-md font-semibold text-on-surface">Minh Nguyễn</p>
-<p class="text-label-sm text-outline">Jan 2024</p>
-</div>
-<span class="material-symbols-outlined text-secondary" data-weight="fill">verified</span>
-</div>
-</div>
+        <!-- Certificate Card 2 -->
+        <div class="border-2 border-outline-variant/30 p-1 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow">
+          <div class="aspect-[4/3] bg-surface-container overflow-hidden rounded-lg relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/10"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+              <span class="font-label-sm text-[10px] text-primary/60 uppercase tracking-[0.2em] mb-2">Waterway Official Certification</span>
+              <h5 class="font-display-lg text-title-md text-primary leading-tight">Community Leader</h5>
+              <div class="mt-4 border-t border-primary/20 pt-4 w-3/4 mx-auto">
+                <p class="font-label-sm text-[8px] text-outline">Certified Social Impact Leader</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 flex justify-between items-center">
+            <div>
+              <p class="font-body-md font-semibold text-on-surface">Minh Nguyễn</p>
+              <p class="text-label-sm text-outline">Jan 2024</p>
+            </div>
+            <span class="material-symbols-outlined text-secondary" data-weight="fill">verified</span>
+          </div>
+        </div>
 
-<!-- Empty Slot / Coming Soon -->
-<div class="border-2 border-dashed border-outline-variant/40 rounded-xl flex flex-col items-center justify-center p-8 text-center opacity-50">
-<span class="material-symbols-outlined text-4xl text-outline mb-4">workspace_premium</span>
-<p class="font-body-md text-outline">Next Milestone: Senior Guardian</p>
-<p class="text-label-sm text-outline">Complete 3 more missions to unlock.</p>
-</div>
-</div>
-</section>
-</main>
+        <!-- Empty Slot / Coming Soon -->
+        <div class="border-2 border-dashed border-outline-variant/40 rounded-xl flex flex-col items-center justify-center p-8 text-center opacity-50">
+          <span class="material-symbols-outlined text-4xl text-outline mb-4">workspace_premium</span>
+          <p class="font-body-md text-outline">Next Milestone: Senior Guardian</p>
+          <p class="text-label-sm text-outline">Complete 3 more missions to unlock.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<!-- Footer -->
-<footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant/30 mt-stack-lg">
-<div class="w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base max-w-container-max mx-auto">
-<div class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim">WATERWAY</div>
-<div class="flex gap-stack-md">
-<a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Terms of Service</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Partner Portal</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Contact Support</a>
-</div>
-<p class="text-on-surface-variant font-body-md text-body-md opacity-70">© 2024 WATERWAY. Protecting our blue planet.</p>
-</div>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant/30 mt-stack-lg">
+    <div class="w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base max-w-container-max mx-auto">
+      <div class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim">WATERWAY</div>
+      <div class="flex gap-stack-md">
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Privacy Policy</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Terms of Service</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Partner Portal</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-sm" href="#">Contact Support</a>
+      </div>
+      <p class="text-on-surface-variant font-body-md text-body-md opacity-70">© 2024 WATERWAY. Protecting our blue planet.</p>
+    </div>
+  </footer>
 
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe md:hidden bg-surface/90 dark:bg-surface-container-highest/90 backdrop-blur-lg border-t border-outline-variant/20 rounded-t-xl shadow-lg">
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="../index.html">
-<span class="material-symbols-outlined">home</span>
-<span class="font-label-sm text-label-sm">Home</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="takemission.html">
-<span class="material-symbols-outlined">water_drop</span>
-<span class="font-label-sm text-label-sm">Missions</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="takemission.html">
-<span class="material-symbols-outlined">analytics</span>
-<span class="font-label-sm text-label-sm">Impact</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="certificate.html">
-<span class="material-symbols-outlined">verified_user</span>
-<span class="font-label-sm text-label-sm">Certs</span>
-</a>
-<a class="flex flex-col items-center justify-center text-primary dark:text-secondary-fixed bg-secondary-container/20 dark:bg-secondary-container/10 rounded-xl px-3 py-1" href="account.html">
-<span class="material-symbols-outlined" data-weight="fill">account_circle</span>
-<span class="font-label-sm text-label-sm">Account</span>
-</a>
-</nav>
+  <!-- BottomNavBar (Mobile Only) -->
+  <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe md:hidden bg-surface/90 dark:bg-surface-container-highest/90 backdrop-blur-lg border-t border-outline-variant/20 rounded-t-xl shadow-lg">
+    <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="../index.html">
+      <span class="material-symbols-outlined">home</span>
+      <span class="font-label-sm text-label-sm">Home</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="takemission.html">
+      <span class="material-symbols-outlined">water_drop</span>
+      <span class="font-label-sm text-label-sm">Missions</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="takemission.html">
+      <span class="material-symbols-outlined">analytics</span>
+      <span class="font-label-sm text-label-sm">Impact</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant" href="certificate.html">
+      <span class="material-symbols-outlined">verified_user</span>
+      <span class="font-label-sm text-label-sm">Certs</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-primary dark:text-secondary-fixed bg-secondary-container/20 dark:bg-secondary-container/10 rounded-xl px-3 py-1" href="account.html">
+      <span class="material-symbols-outlined" data-weight="fill">account_circle</span>
+      <span class="font-label-sm text-label-sm">Account</span>
+    </a>
+  </nav>
 
 </body></html>
