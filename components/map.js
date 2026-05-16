@@ -71,4 +71,11 @@ class WaterwayMap {
             console.log("Tọa độ đã chọn:", { lat, lng });
         }
     }
+    // Hàm di chuyển bản đồ đến tọa độ mới (dùng cho Take Mission)
+    moveTo(lat, lng) {
+        if (this.map) {
+            this.map.setView([lat, lng], 15); // Di chuyển góc nhìn bản đồ
+            this.placeMarker(lat, lng);       // Cắm ghim vào tọa độ mới
+        }
+    }
 }
